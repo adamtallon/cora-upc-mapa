@@ -1,1 +1,27 @@
-{}
+{
+ "aalto|finland": [
+  60.1718194,
+  24.9227092,
+  "Suomi / Finland"
+ ],
+ "albalate del arzobispo|spain": [
+  41.1241985,
+  -0.5725805,
+  "España"
+ ],
+ "capafonts|spain": [
+  41.2948795,
+  1.0269673,
+  "España"
+ ],
+ "les cases d'alcanar|spain": [
+  40.552856,
+  0.5306608,
+  "España"
+ ],
+ "ribera d'ondara|spain": [
+  41.634037,
+  1.3288471,
+  "España"
+ ]
+}

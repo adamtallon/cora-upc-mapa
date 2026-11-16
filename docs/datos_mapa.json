@@ -1,9 +1,9 @@
 {
- "generado": "2026-11-16 (vista previa)",
+ "generado": "2026-11-16",
  "coleccion": "upc",
- "total_publicados": 204,
- "no_leidos": 0,
- "con_ubicacion": 80,
+ "total_publicados": 234,
+ "no_leidos": 40,
+ "con_ubicacion": 83,
  "ubicaciones": [
   {
    "lat": 41.3874,
@@ -15,7 +15,7 @@
    "doi": "doi:10.34810/DATA3305",
    "titulo": "CICIoMT2024 + IoMT-TrafficData: a unified heterogeneous IoMT dataset for intrusion detection",
    "url": "https://doi.org/10.34810/DATA3305",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -33,7 +33,7 @@
    "doi": "doi:10.34810/DATA3204",
    "titulo": "Dataset of electrical and thermal measurements of Si IGBT under accelerated power-cycling aging",
    "url": "https://doi.org/10.34810/DATA3204",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -46,7 +46,7 @@
    "doi": "doi:10.34810/DATA3379",
    "titulo": "Column-to-foundation connection test",
    "url": "https://doi.org/10.34810/DATA3379",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -55,11 +55,11 @@
    "tipo": "punto",
    "bbox": null,
    "lugar": "",
-   "pais": "",
+   "pais": "Spain",
    "doi": "doi:10.34810/DATA704",
    "titulo": "Calibrated signals used for overlap retrievals",
    "url": "https://doi.org/10.34810/DATA704",
-   "anio": "",
+   "anio": "2023",
    "internacional": false
   },
   {
@@ -72,7 +72,7 @@
    "doi": "doi:10.34810/DATA2446",
    "titulo": "Replication Data for Wavefront analysis of a focus-tunable lens with gravity compensation",
    "url": "https://doi.org/10.34810/DATA2446",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -85,7 +85,7 @@
    "doi": "doi:10.34810/DATA3315",
    "titulo": "Column base tests",
    "url": "https://doi.org/10.34810/DATA3315",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -98,7 +98,7 @@
    "doi": "doi:10.34810/DATA211",
    "titulo": "Estudio sobre la internacionalización de la Facultat d’Informàtica de Barcelona (UPC)",
    "url": "https://doi.org/10.34810/DATA211",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -111,7 +111,7 @@
    "doi": "doi:10.34810/DATA2414",
    "titulo": "Replication Data for: Typical meteorological years and heatwave datasets under present and future climate scenarios in the four main climatic regions of Catalonia",
    "url": "https://doi.org/10.34810/DATA2414",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -124,7 +124,7 @@
    "doi": "doi:10.34810/DATA2414",
    "titulo": "Replication Data for: Typical meteorological years and heatwave datasets under present and future climate scenarios in the four main climatic regions of Catalonia",
    "url": "https://doi.org/10.34810/DATA2414",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -137,7 +137,7 @@
    "doi": "doi:10.34810/DATA2414",
    "titulo": "Replication Data for: Typical meteorological years and heatwave datasets under present and future climate scenarios in the four main climatic regions of Catalonia",
    "url": "https://doi.org/10.34810/DATA2414",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -150,7 +150,7 @@
    "doi": "doi:10.34810/DATA1487",
    "titulo": "Calibrating and coding a weather station with MakeCode for a BBC micro:bit",
    "url": "https://doi.org/10.34810/DATA1487",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -163,7 +163,7 @@
    "doi": "doi:10.34810/DATA3496",
    "titulo": "MultiMO-Dataset-example",
    "url": "https://doi.org/10.34810/DATA3496",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -176,7 +176,7 @@
    "doi": "doi:10.34810/DATA1488",
    "titulo": "Real-time infra-red monitoring of green roofs with an AMG8833 IR Thermal Camera",
    "url": "https://doi.org/10.34810/DATA1488",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -194,7 +194,7 @@
    "doi": "doi:10.34810/DATA2441",
    "titulo": "A Data set of voltage and current waveforms of wet arc tracking at low pressure conditions",
    "url": "https://doi.org/10.34810/DATA2441",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -212,7 +212,7 @@
    "doi": "doi:10.34810/DATA1338",
    "titulo": "Datos sobre las capacidades biofertilizantes y bioestimulantes de microalgas crecidas en aguas residuales",
    "url": "https://doi.org/10.34810/DATA1338",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -230,7 +230,7 @@
    "doi": "doi:10.34810/DATA565",
    "titulo": "Airborne Infra Red observation of a experimental burn conducted in Ngarkat Conservation Park,  Australia",
    "url": "https://doi.org/10.34810/DATA565",
-   "anio": "",
+   "anio": "2022",
    "internacional": true
   },
   {
@@ -248,7 +248,7 @@
    "doi": "doi:10.34810/DATA2987",
    "titulo": "Percepciones y expectativas laborales en el ámbito de estudio: estudiantes de primero de ingeniería de la UPC (ESEIAAT y FIB)",
    "url": "https://doi.org/10.34810/DATA2987",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -266,7 +266,7 @@
    "doi": "doi:10.34810/DATA2848",
    "titulo": "Replication data for: Marine-derived fatty acid–based nanoparticles for ocular health and retinal protection",
    "url": "https://doi.org/10.34810/DATA2848",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -279,7 +279,7 @@
    "doi": "doi:10.34810/DATA754",
    "titulo": "Geometrical and optical properties of cirrus clouds",
    "url": "https://doi.org/10.34810/DATA754",
-   "anio": "",
+   "anio": "2023",
    "internacional": false
   },
   {
@@ -288,11 +288,11 @@
    "tipo": "punto",
    "bbox": null,
    "lugar": "",
-   "pais": "",
+   "pais": "Spain",
    "doi": "doi:10.34810/DATA195",
    "titulo": "Barcelona MPL Backscatter profiles at 00:00 and 12:00 UTC, between 2015 and 2018",
    "url": "https://doi.org/10.34810/DATA195",
-   "anio": "",
+   "anio": "2022",
    "internacional": false
   },
   {
@@ -305,7 +305,7 @@
    "doi": "doi:10.34810/DATA3048",
    "titulo": "Germination of Ustilago syntherismae ustilospores",
    "url": "https://doi.org/10.34810/DATA3048",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -323,7 +323,7 @@
    "doi": "doi:10.34810/DATA1295",
    "titulo": "Observational dataset for one year: east and west facades of a university building in Barcelona",
    "url": "https://doi.org/10.34810/DATA1295",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -336,7 +336,7 @@
    "doi": "doi:10.34810/DATA3335",
    "titulo": "Pilot_4-Assessment_of_concrete_at_demolition_site",
    "url": "https://doi.org/10.34810/DATA3335",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -349,7 +349,7 @@
    "doi": "doi:10.34810/DATA3335",
    "titulo": "Pilot_4-Assessment_of_concrete_at_demolition_site",
    "url": "https://doi.org/10.34810/DATA3335",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -362,7 +362,7 @@
    "doi": "doi:10.34810/DATA918",
    "titulo": "Harvesting in green roofs: database application",
    "url": "https://doi.org/10.34810/DATA918",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -375,7 +375,7 @@
    "doi": "doi:10.34810/DATA919",
    "titulo": "Register of green-roof activities: database application",
    "url": "https://doi.org/10.34810/DATA919",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -388,7 +388,7 @@
    "doi": "doi:10.34810/DATA920",
    "titulo": "Assesment of technical green-roof indicators: database application",
    "url": "https://doi.org/10.34810/DATA920",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -401,7 +401,7 @@
    "doi": "doi:10.34810/DATA921",
    "titulo": "Social questionnaires for green roofs assessment: database application",
    "url": "https://doi.org/10.34810/DATA921",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -414,7 +414,7 @@
    "doi": "doi:10.34810/DATA2564",
    "titulo": "Avaluació de l'estat de referencia climàtica de la costa de Barcelona - ECCO_TS",
    "url": "https://doi.org/10.34810/DATA2564",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -432,7 +432,7 @@
    "doi": "doi:10.34810/DATA2731",
    "titulo": "Real-time data acquisition for the hygrothermal performance of five earth-and-fibers prototypes exposed to real climatic conditions.",
    "url": "https://doi.org/10.34810/DATA2731",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -445,7 +445,7 @@
    "doi": "doi:10.34810/DATA2633",
    "titulo": "Ensayos de caracterización de 7 yesos diferentes para su aplicación como pavimentos continuos de yeso",
    "url": "https://doi.org/10.34810/DATA2633",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -458,7 +458,7 @@
    "doi": "doi:10.34810/DATA2115",
    "titulo": "Replication Data for: Proximidad y mixticidad urbana para una ciudad saludable. Criterios y herramientas para la evaluación y promoción de la mezcla de actividades en áreas metropolitanas compactas [METRO·MIX]",
    "url": "https://doi.org/10.34810/DATA2115",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -471,7 +471,7 @@
    "doi": "doi:10.34810/DATA2115",
    "titulo": "Replication Data for: Proximidad y mixticidad urbana para una ciudad saludable. Criterios y herramientas para la evaluación y promoción de la mezcla de actividades en áreas metropolitanas compactas [METRO·MIX]",
    "url": "https://doi.org/10.34810/DATA2115",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -484,7 +484,7 @@
    "doi": "doi:10.34810/DATA2115",
    "titulo": "Replication Data for: Proximidad y mixticidad urbana para una ciudad saludable. Criterios y herramientas para la evaluación y promoción de la mezcla de actividades en áreas metropolitanas compactas [METRO·MIX]",
    "url": "https://doi.org/10.34810/DATA2115",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -497,7 +497,7 @@
    "doi": "doi:10.34810/DATA2115",
    "titulo": "Replication Data for: Proximidad y mixticidad urbana para una ciudad saludable. Criterios y herramientas para la evaluación y promoción de la mezcla de actividades en áreas metropolitanas compactas [METRO·MIX]",
    "url": "https://doi.org/10.34810/DATA2115",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -515,7 +515,7 @@
    "doi": "doi:10.34810/DATA2530",
    "titulo": "Replication Data for: Atmospheric boundary layer over urban roughness: validation of large-eddy simulation",
    "url": "https://doi.org/10.34810/DATA2530",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -528,7 +528,7 @@
    "doi": "doi:10.34810/DATA2775",
    "titulo": "RISC-V Hardware attack traces using runtime executed instructions dataset",
    "url": "https://doi.org/10.34810/DATA2775",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -541,7 +541,7 @@
    "doi": "doi:10.34810/DATA1489",
    "titulo": "Real-time data acquisition for the \"Verd de Proximitat BCN\" project",
    "url": "https://doi.org/10.34810/DATA1489",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -554,7 +554,7 @@
    "doi": "doi:10.34810/DATA2711",
    "titulo": "RISC-V Hardware attack traces on gem5 O3 CPU performance and instruction counters (HARPY-V-GEM5)",
    "url": "https://doi.org/10.34810/DATA2711",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -567,7 +567,7 @@
    "doi": "doi:10.34810/DATA2304",
    "titulo": "Replication Data for: Detection of wind turbine rotor imbalance using unsupervised output-only vibration data analysis",
    "url": "https://doi.org/10.34810/DATA2304",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -580,7 +580,7 @@
    "doi": "doi:10.34810/DATA1175",
    "titulo": "Replication Data for: Acoustic emission applied to stochastic modeling of microdamage in compact bone",
    "url": "https://doi.org/10.34810/DATA1175",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -593,7 +593,7 @@
    "doi": "doi:10.34810/DATA983",
    "titulo": "Interdisciplinary set of indicators for the assessment of green roofs",
    "url": "https://doi.org/10.34810/DATA983",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -606,7 +606,7 @@
    "doi": "doi:10.34810/DATA3529",
    "titulo": "Llobregat river flow, flow of reclaimed water entering the river, and concentration of contaminants",
    "url": "https://doi.org/10.34810/DATA3529",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -619,7 +619,7 @@
    "doi": "doi:10.34810/DATA1948",
    "titulo": "MobilitApp - Mobility sensor dataset",
    "url": "https://doi.org/10.34810/DATA1948",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -632,7 +632,7 @@
    "doi": "doi:10.34810/DATA1920",
    "titulo": "Attitudes, willingness to pay, and sensory evaluations of consumers for innovative legume-based gnocchi products",
    "url": "https://doi.org/10.34810/DATA1920",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -650,7 +650,7 @@
    "doi": "doi:10.34810/DATA2547",
    "titulo": "Airgilab September-October 2024",
    "url": "https://doi.org/10.34810/DATA2547",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -668,7 +668,7 @@
    "doi": "doi:10.34810/DATA2627",
    "titulo": "Barcelona's network of climate shelters: categorization, availability and proximity to residential plots",
    "url": "https://doi.org/10.34810/DATA2627",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -686,7 +686,7 @@
    "doi": "doi:10.34810/DATA2842",
    "titulo": "Characterization of natural-based nanoparticles for skin applications",
    "url": "https://doi.org/10.34810/DATA2842",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -704,7 +704,7 @@
    "doi": "doi:10.34810/DATA1731",
    "titulo": "Toxic dispersion accidental scenarios",
    "url": "https://doi.org/10.34810/DATA1731",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -717,7 +717,7 @@
    "doi": "doi:10.34810/DATA1433",
    "titulo": "Paràmetres morfològics i tipologia estructural dels edificis històrics de l'Eixample",
    "url": "https://doi.org/10.34810/DATA1433",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -735,7 +735,7 @@
    "doi": "doi:10.34810/DATA2437",
    "titulo": "Replication Data for: Thermal performance evaluation of a double skin façade with latticework solar protection: a case study in a humid tropical climate (Panama)",
    "url": "https://doi.org/10.34810/DATA2437",
-   "anio": "",
+   "anio": "2025",
    "internacional": true
   },
   {
@@ -753,7 +753,7 @@
    "doi": "doi:10.34810/DATA2342",
    "titulo": "Elaboration of Spanish public open data to assess climatic variables of the built environment",
    "url": "https://doi.org/10.34810/DATA2342",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -766,7 +766,7 @@
    "doi": "doi:10.34810/DATA926",
    "titulo": "20th-century art music in Barcelona (Spain):  concerts and record-listening sessions in small venues (1948-1960)",
    "url": "https://doi.org/10.34810/DATA926",
-   "anio": "",
+   "anio": "2023",
    "internacional": false
   },
   {
@@ -779,7 +779,7 @@
    "doi": "doi:10.34810/DATA3380",
    "titulo": "Beam connection test",
    "url": "https://doi.org/10.34810/DATA3380",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -792,7 +792,7 @@
    "doi": "doi:10.34810/DATA3381",
    "titulo": "Column connection test",
    "url": "https://doi.org/10.34810/DATA3381",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -810,7 +810,7 @@
    "doi": "doi:10.34810/DATA1479",
    "titulo": "3 Years data of air temperature and relative humidity in two houses with different construction systems",
    "url": "https://doi.org/10.34810/DATA1479",
-   "anio": "",
+   "anio": "2024",
    "internacional": false
   },
   {
@@ -828,7 +828,33 @@
    "doi": "doi:10.34810/DATA2730",
    "titulo": "Acoustic absorption dataset of earth and fibers new composites",
    "url": "https://doi.org/10.34810/DATA2730",
-   "anio": "",
+   "anio": "2026",
+   "internacional": false
+  },
+  {
+   "lat": 41.634037,
+   "lon": 1.3288471,
+   "tipo": "ciudad",
+   "bbox": null,
+   "lugar": "Ribera d'Ondara",
+   "pais": "Spain",
+   "doi": "doi:10.34810/DATA2631",
+   "titulo": "Evolución de la temperatura de cocción de varios horno de yeso tradicional",
+   "url": "https://doi.org/10.34810/DATA2631",
+   "anio": "2026",
+   "internacional": false
+  },
+  {
+   "lat": 41.1241985,
+   "lon": -0.5725805,
+   "tipo": "ciudad",
+   "bbox": null,
+   "lugar": "Albalate del Arzobispo",
+   "pais": "Spain",
+   "doi": "doi:10.34810/DATA2631",
+   "titulo": "Evolución de la temperatura de cocción de varios horno de yeso tradicional",
+   "url": "https://doi.org/10.34810/DATA2631",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -846,7 +872,7 @@
    "doi": "doi:10.34810/DATA2646",
    "titulo": "Corona inception and complete breakdown voltages in air under AC, positive DC, and negative DC supply at different p·d values",
    "url": "https://doi.org/10.34810/DATA2646",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -859,7 +885,7 @@
    "doi": "doi:10.34810/DATA899",
    "titulo": "Replication Data for: Local buckling of cold formed steel trapezoidal sheets: data for finite element model validation",
    "url": "https://doi.org/10.34810/DATA899",
-   "anio": "",
+   "anio": "2023",
    "internacional": false
   },
   {
@@ -872,7 +898,7 @@
    "doi": "doi:10.34810/DATA899",
    "titulo": "Replication Data for: Local buckling of cold formed steel trapezoidal sheets: data for finite element model validation",
    "url": "https://doi.org/10.34810/DATA899",
-   "anio": "",
+   "anio": "2023",
    "internacional": false
   },
   {
@@ -890,7 +916,7 @@
    "doi": "doi:10.34810/DATA3206",
    "titulo": "Replication data for: Colistin delivery by poly(dimethylsiloxane)-g-poly(ethylene oxide) vesicles prevents resistance development in Gram negatives",
    "url": "https://doi.org/10.34810/DATA3206",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -908,7 +934,20 @@
    "doi": "doi:10.34810/DATA3217",
    "titulo": "Automated Python workflow for climate resilience assessment of buildings under heatwaves and future climate scenarios using EnergyPlus.",
    "url": "https://doi.org/10.34810/DATA3217",
-   "anio": "",
+   "anio": "2026",
+   "internacional": false
+  },
+  {
+   "lat": 40.552856,
+   "lon": 0.5306608,
+   "tipo": "ciudad",
+   "bbox": null,
+   "lugar": "Les Cases d'Alcanar",
+   "pais": "Spain",
+   "doi": "doi:10.34810/DATA3654",
+   "titulo": "MESTRAL field campaign 2014",
+   "url": "https://doi.org/10.34810/DATA3654",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -926,7 +965,7 @@
    "doi": "doi:10.34810/DATA2971",
    "titulo": "Replication data for: Machine learning integration of eye-tracking and cognitive screening for detecting cognitive impairment",
    "url": "https://doi.org/10.34810/DATA2971",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -939,7 +978,7 @@
    "doi": "doi:10.34810/DATA1550",
    "titulo": "Replication data for: Thermal Performance and Microclimate Modulation: A Year-Long, Multi-Site Study of Operational Green Roofs in Barcelona under Severe Water Scarcity",
    "url": "https://doi.org/10.34810/DATA1550",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -957,7 +996,7 @@
    "doi": "doi:10.34810/DATA3669",
    "titulo": "Present and future typical meteorological year weather files for selected locations in Catalonia",
    "url": "https://doi.org/10.34810/DATA3669",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -966,11 +1005,11 @@
    "tipo": "punto",
    "bbox": null,
    "lugar": "",
-   "pais": "",
+   "pais": "Spain",
    "doi": "doi:10.34810/DATA194",
    "titulo": "Barcelona radiosounding files used in identified hygroscopicity cases, between 2015 and 2018",
    "url": "https://doi.org/10.34810/DATA194",
-   "anio": "",
+   "anio": "2022",
    "internacional": false
   },
   {
@@ -983,7 +1022,7 @@
    "doi": "doi:10.34810/DATA3542",
    "titulo": "RISC-V hardware attack traces on gem5 O3 CPU performance and instruction counters (HARPY-V-GEM5-100c)",
    "url": "https://doi.org/10.34810/DATA3542",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1001,7 +1040,7 @@
    "doi": "doi:10.34810/DATA2395",
    "titulo": "Lithium-ion battery pack cycling dataset with CC-CV charging and WLTP/constant discharge profiles",
    "url": "https://doi.org/10.34810/DATA2395",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -1019,7 +1058,7 @@
    "doi": "doi:10.34810/DATA1327",
    "titulo": "Wall heat flux and particles dispersion on long-range indoor convective flow. Detached eddy simulation",
    "url": "https://doi.org/10.34810/DATA1327",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1032,7 +1071,7 @@
    "doi": "doi:10.34810/DATA1011",
    "titulo": "Replication Data for: Structural health monitoring of jacket-type support structures in offshore wind turbines: a comprehensive dataset for bolt loosening detection through vibrational analysis",
    "url": "https://doi.org/10.34810/DATA1011",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -1050,7 +1089,7 @@
    "doi": "doi:10.34810/DATA3572",
    "titulo": "A Multi-domain experimental dataset for condition monitoring of an electromechanical drivetrain under stationary and non-stationary operating conditions with single and combined faults",
    "url": "https://doi.org/10.34810/DATA3572",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1068,7 +1107,7 @@
    "doi": "doi:10.34810/DATA3711",
    "titulo": "Replication data for: Visual performance and ocular higher-order aberrations with a gradient multifocal contact lens for myopia control",
    "url": "https://doi.org/10.34810/DATA3711",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1086,7 +1125,7 @@
    "doi": "doi:10.34810/DATA3675",
    "titulo": "Two-year clinical follow-up data of keratoconus patients fitted with a new large-diameter rigid corneal gas-permeable contact lens",
    "url": "https://doi.org/10.34810/DATA3675",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1099,7 +1138,7 @@
    "doi": "doi:10.34810/DATA3271",
    "titulo": "Replication data for: Sheding light on the formation mechanisms of Islamic polychrome lusters :  a Cu, Fe, Ag-micro XANES study",
    "url": "https://doi.org/10.34810/DATA3271",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1112,7 +1151,7 @@
    "doi": "doi:10.34810/DATA2500",
    "titulo": "Rotating electromechanical system dataset for condition monitoring",
    "url": "https://doi.org/10.34810/DATA2500",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -1125,7 +1164,7 @@
    "doi": "doi:10.34810/DATA3419",
    "titulo": "AIS NMEA raw messages from the Barcelona School of Nautical Studies (FNB-UPC)",
    "url": "https://doi.org/10.34810/DATA3419",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1138,7 +1177,7 @@
    "doi": "doi:10.34810/DATA2026",
    "titulo": "AIS maritime traffic data from the Barcelona School of Nautical Studies (FNB-UPC)",
    "url": "https://doi.org/10.34810/DATA2026",
-   "anio": "",
+   "anio": "2025",
    "internacional": false
   },
   {
@@ -1151,7 +1190,7 @@
    "doi": "doi:10.34810/DATA756",
    "titulo": "Replication Data for: Density functional theory calculations of facet-engineered TiO2 for H2 evolution performed with the VASP software",
    "url": "https://doi.org/10.34810/DATA756",
-   "anio": "",
+   "anio": "2023",
    "internacional": false
   },
   {
@@ -1169,7 +1208,7 @@
    "doi": "doi:10.34810/DATA3680",
    "titulo": "Wildland–urban interface distribution in Spain at 150 m resolution",
    "url": "https://doi.org/10.34810/DATA3680",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -1187,7 +1226,7 @@
    "doi": "doi:10.34810/DATA2224",
    "titulo": "Replication data for: Eye tracking and machine learning to assess cognitive impairment in post-COVID-19 patients",
    "url": "https://doi.org/10.34810/DATA2224",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1205,7 +1244,7 @@
    "doi": "doi:10.34810/DATA2864",
    "titulo": "Replication Data for: G-protein activation of the dark-state visual G protein-coupled receptor rhodopsin by releasing critical structural constraints",
    "url": "https://doi.org/10.34810/DATA2864",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1223,7 +1262,7 @@
    "doi": "doi:10.34810/DATA2864",
    "titulo": "Replication Data for: G-protein activation of the dark-state visual G protein-coupled receptor rhodopsin by releasing critical structural constraints",
    "url": "https://doi.org/10.34810/DATA2864",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1241,7 +1280,7 @@
    "doi": "doi:10.34810/DATA2864",
    "titulo": "Replication Data for: G-protein activation of the dark-state visual G protein-coupled receptor rhodopsin by releasing critical structural constraints",
    "url": "https://doi.org/10.34810/DATA2864",
-   "anio": "",
+   "anio": "2026",
    "internacional": true
   },
   {
@@ -1254,7 +1293,7 @@
    "doi": "doi:10.34810/DATA2662",
    "titulo": "Replication Data for: Optical and simulated visual outcomes of two presbyopia-correcting intraocular lenses tested in clinically relevant decentration and tilt conditions",
    "url": "https://doi.org/10.34810/DATA2662",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1272,7 +1311,7 @@
    "doi": "doi:10.34810/DATA3164",
    "titulo": "Replication data for: Context-adaptive deep learning for sustainable product recommendation: Application to concrete",
    "url": "https://doi.org/10.34810/DATA3164",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1285,7 +1324,7 @@
    "doi": "doi:10.34810/DATA3668",
    "titulo": "Photo-taking impairment effect data and Bayes Library",
    "url": "https://doi.org/10.34810/DATA3668",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1303,7 +1342,7 @@
    "doi": "doi:10.34810/DATA3737",
    "titulo": "Replication Data for: Assessment of the consistency between YouTube videos and scientific evidence on paediatric myopia control",
    "url": "https://doi.org/10.34810/DATA3737",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1321,7 +1360,7 @@
    "doi": "doi:10.34810/DATA3826",
    "titulo": "Investigación para la impresión 3D de compuestos aislantes de FRCM para cerramientos inteligentes en edificación",
    "url": "https://doi.org/10.34810/DATA3826",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1339,7 +1378,7 @@
    "doi": "doi:10.34810/DATA2898",
    "titulo": "Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
    "url": "https://doi.org/10.34810/DATA2898",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1357,7 +1396,7 @@
    "doi": "doi:10.34810/DATA2898",
    "titulo": "Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
    "url": "https://doi.org/10.34810/DATA2898",
-   "anio": "",
+   "anio": "2026",
    "internacional": false
   },
   {
@@ -1375,7 +1414,25 @@
    "doi": "doi:10.34810/DATA2898",
    "titulo": "Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
    "url": "https://doi.org/10.34810/DATA2898",
-   "anio": "",
+   "anio": "2026",
+   "internacional": true
+  },
+  {
+   "lat": 60.184933,
+   "lon": 24.825311,
+   "tipo": "area",
+   "bbox": [
+    60.177425,
+    24.81079,
+    60.192441,
+    24.839833
+   ],
+   "lugar": "",
+   "pais": "",
+   "doi": "doi:10.34810/DATA3906",
+   "titulo": "Replication data for Effect of the colour on the solar energy harvesting capacity of woven sunshade fabrics as solar cell covers",
+   "url": "https://doi.org/10.34810/DATA3906",
+   "anio": "2026",
    "internacional": true
   }
  ]

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,108 +8,133 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css">
 <style>
-  :root { --azul:#1F4E78; --gris:#5b6770; --borde:#d9dee3; --fondo:#f6f8fa; }
+  :root { --blau:#1F4E78; --gris:#5b6770; --vora:#d9dee3; --fons:#f6f8fa; }
   * { box-sizing: border-box; }
   html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #1c2329; }
   body { display: flex; flex-direction: column; }
-  header { background: var(--azul); color: #fff; padding: 14px 20px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; }
+  header { background: var(--blau); color: #fff; padding: 14px 20px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; }
   header h1 { margin: 0; font-size: 1.15rem; font-weight: 600; }
   header .sub { font-size: .85rem; opacity: .85; }
-  .barra { background: var(--fondo); border-bottom: 1px solid var(--borde); padding: 10px 20px; display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; font-size: .9rem; }
+  .barra { background: var(--fons); border-bottom: 1px solid var(--vora); padding: 10px 20px; display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; font-size: .9rem; }
   .barra strong { font-size: 1.05rem; }
   .barra label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
-  #aviso { display: none; background: #fff4e5; color: #7a4b00; padding: 12px 20px; font-size: .9rem; border-bottom: 1px solid #f0d9b5; }
+  #avis { display: none; background: #fff4e5; color: #7a4b00; padding: 12px 20px; font-size: .9rem; border-bottom: 1px solid #f0d9b5; }
   #mapa { flex: 1; min-height: 300px; }
-  footer { font-size: .78rem; color: var(--gris); padding: 6px 20px; border-top: 1px solid var(--borde); background: #fff; }
+  footer { font-size: .78rem; color: var(--gris); padding: 6px 20px; border-top: 1px solid var(--vora); background: #fff; }
   .popup h3 { margin: 0 0 6px; font-size: .95rem; line-height: 1.25; }
   .popup p { margin: 2px 0; font-size: .82rem; color: var(--gris); }
-  .popup a.enlace { display: inline-block; margin-top: 6px; font-size: .85rem; color: var(--azul); }
+  .popup a.enllac { display: inline-block; margin-top: 6px; font-size: .85rem; color: var(--blau); }
 </style>
 </head>
 <body>
 <header>
-  <h1>Datasets de investigación de la UPC</h1>
-  <span class="sub">Ubicación de los datos publicados en CORA.RDR</span>
+  <h1>Datasets de recerca de la UPC</h1>
+  <span class="sub">Ubicació de les dades publicades a CORA.RDR</span>
 </header>
 <div class="barra">
-  <span><strong id="n-ubic">–</strong> datasets con ubicación de <span id="n-total">–</span> publicados</span>
-  <label><input type="checkbox" id="chk-intl"> Mostrar ubicaciones internacionales (<span id="n-intl">0</span>)</label>
+  <span><strong id="n-ubic">–</strong> datasets amb ubicació de <span id="n-total">–</span> publicats</span>
+  <label><input type="checkbox" id="chk-intl"> Mostra les ubicacions internacionals (<span id="n-intl">0</span>)</label>
 </div>
-<div id="aviso"></div>
+<div id="avis"></div>
 <div id="mapa"></div>
-<footer>Datos: CORA.RDR (CSUC) · actualizado el <span id="fecha">–</span> · Mapa base © colaboradores de OpenStreetMap</footer>
+<footer>Dades: CORA.RDR (CSUC) · actualitzat el <span id="data">–</span> · Mapa base © col·laboradors d'OpenStreetMap</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
 <script>
-const VISTA_INICIAL = { centro: [41.6, 2.0], zoom: 8 };
+const VISTA_INICIAL = { centre: [41.6, 2.0], zoom: 8 };
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g,
   c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-const mapa = L.map("mapa").setView(VISTA_INICIAL.centro, VISTA_INICIAL.zoom);
+// Noms de països i ciutats en català (les dades de CORA vénen en anglès o en altres llengües)
+const norm = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+const NOMS = {
+  "spain": "Espanya", "espana": "Espanya", "serbia": "Sèrbia", "germany": "Alemanya",
+  "sweden": "Suècia", "norway": "Noruega", "panama": "Panamà", "mexico": "Mèxic",
+  "france": "França", "greece": "Grècia", "italy": "Itàlia", "portugal": "Portugal",
+  "chile": "Xile", "united states": "Estats Units", "australia": "Austràlia",
+  "united kingdom": "Regne Unit", "netherlands": "Països Baixos", "belgium": "Bèlgica",
+  "switzerland": "Suïssa", "ireland": "Irlanda", "denmark": "Dinamarca", "finland": "Finlàndia",
+  "poland": "Polònia", "austria": "Àustria", "brazil": "Brasil", "colombia": "Colòmbia",
+  "peru": "Perú", "china": "Xina", "japan": "Japó", "india": "Índia", "canada": "Canadà",
+  "morocco": "Marroc",
+  "belgrade": "Belgrad", "belgrado": "Belgrad", "berlin": "Berlín", "boras": "Borås",
+  "a coruna": "A Corunya", "malaga": "Màlaga", "barcelonaa": "Barcelona",
+  "sant cugat": "Sant Cugat del Vallès", "san juan del rio": "San Juan del Río"
+};
+const nom = s => NOMS[norm(s)] || s;
+
+function formatData(txt) {
+  const m = /(\d{4})-(\d{2})-(\d{2})/.exec(txt || "");
+  if (!m) return txt || "–";
+  return txt.replace(m[0], m[3] + "/" + m[2] + "/" + m[1]);
+}
+
+const mapa = L.map("mapa", { zoomControl: false }).setView(VISTA_INICIAL.centre, VISTA_INICIAL.zoom);
+L.control.zoom({ zoomInTitle: "Apropa", zoomOutTitle: "Allunya" }).addTo(mapa);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 18, attribution: "&copy; OpenStreetMap"
 }).addTo(mapa);
 
-const grupo = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45 });
-mapa.addLayer(grupo);
+const grup = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 45 });
+mapa.addLayer(grup);
 let capaArea = null;
-let datos = [];
+let dades = [];
 
-function quitarArea() { if (capaArea) { mapa.removeLayer(capaArea); capaArea = null; } }
-mapa.on("popupclose", quitarArea);
+function treuArea() { if (capaArea) { mapa.removeLayer(capaArea); capaArea = null; } }
+mapa.on("popupclose", treuArea);
 
-function contenido(u) {
+function contingut(u) {
   const url = /^https?:\/\//.test(u.url) ? u.url : "";
-  const lugar = [u.lugar, u.pais].filter(Boolean).join(", ");
+  const lloc = [u.lugar ? nom(u.lugar) : "", u.pais ? nom(u.pais) : ""].filter(Boolean).join(", ");
   return '<div class="popup"><h3>' + esc(u.titulo) + "</h3>" +
-    (lugar ? "<p>" + esc(lugar) + "</p>" : "") +
-    (u.tipo === "area" ? "<p>Área geográfica de estudio</p>" : "") +
+    (lloc ? "<p>" + esc(lloc) + "</p>" : "") +
+    (u.tipo === "area" ? "<p>Àrea geogràfica d'estudi</p>" : "") +
     "<p>" + esc(u.doi) + (u.anio ? " · " + esc(u.anio) : "") + "</p>" +
-    (url ? '<a class="enlace" target="_blank" rel="noopener" href="' + esc(url) + '">Ver en CORA →</a>' : "") +
+    (url ? '<a class="enllac" target="_blank" rel="noopener" href="' + esc(url) + '">Veure a CORA →</a>' : "") +
     "</div>";
 }
 
-function pintar(conInternacionales) {
-  grupo.clearLayers(); quitarArea();
-  const visibles = datos.filter(u => conInternacionales || !u.internacional);
+function pinta(ambInternacionals) {
+  grup.clearLayers(); treuArea();
+  const visibles = dades.filter(u => ambInternacionals || !u.internacional);
   visibles.forEach(u => {
-    const m = L.marker([u.lat, u.lon]).bindPopup(contenido(u), { maxWidth: 300 });
+    const m = L.marker([u.lat, u.lon]).bindPopup(contingut(u), { maxWidth: 300 });
     if (u.bbox) {
       m.on("click", () => {
-        quitarArea();
+        treuArea();
         capaArea = L.rectangle([[u.bbox[0], u.bbox[1]], [u.bbox[2], u.bbox[3]]],
           { color: "#1F4E78", weight: 1, fillOpacity: 0.12 }).addTo(mapa);
       });
     }
-    grupo.addLayer(m);
+    grup.addLayer(m);
   });
-  if (conInternacionales && visibles.length) {
-    mapa.fitBounds(grupo.getBounds().pad(0.1), { maxZoom: 6 });
+  if (ambInternacionals && visibles.length) {
+    mapa.fitBounds(grup.getBounds().pad(0.1), { maxZoom: 6 });
   } else {
-    mapa.setView(VISTA_INICIAL.centro, VISTA_INICIAL.zoom);
+    mapa.setView(VISTA_INICIAL.centre, VISTA_INICIAL.zoom);
   }
 }
 
-function mostrarAviso(msg) {
-  const a = document.getElementById("aviso"); a.textContent = msg; a.style.display = "block";
+function mostraAvis(msg) {
+  const a = document.getElementById("avis"); a.textContent = msg; a.style.display = "block";
 }
 
 fetch("datos_mapa.json", { cache: "no-cache" })
   .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
   .then(j => {
-    datos = j.ubicaciones || [];
+    dades = j.ubicaciones || [];
     document.getElementById("n-ubic").textContent = j.con_ubicacion;
     document.getElementById("n-total").textContent = j.total_publicados;
-    document.getElementById("fecha").textContent = j.generado || "–";
-    const intl = new Set(datos.filter(u => u.internacional).map(u => u.doi));
+    document.getElementById("data").textContent = formatData(j.generado);
+    const intl = new Set(dades.filter(u => u.internacional).map(u => u.doi));
     document.getElementById("n-intl").textContent = intl.size;
-    pintar(false);
-    document.getElementById("chk-intl").addEventListener("change", e => pintar(e.target.checked));
+    pinta(false);
+    document.getElementById("chk-intl").addEventListener("change", e => pinta(e.target.checked));
   })
-  .catch(err => mostrarAviso("No se pudieron cargar los datos (" + err.message +
-    "). Si has abierto este archivo haciendo doble clic, el navegador lo bloquea: " +
-    "tiene que servirse desde una web (GitHub Pages) o con un servidor local."));
+  .catch(err => mostraAvis("No s'han pogut carregar les dades (" + err.message +
+    "). Si has obert aquest fitxer fent doble clic, el navegador ho bloqueja: " +
+    "ha de servir-se des d'una web (GitHub Pages) o amb un servidor local."));
 </script>
 </body>
 </html>

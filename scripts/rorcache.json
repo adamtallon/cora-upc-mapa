@@ -1,0 +1,485 @@
+{
+ "org": {
+  "001jx2139": {
+   "ciudad": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "nombre": "Hospital Sant Joan de Déu Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "003vg9w96": {
+   "ciudad": "Paris",
+   "lat": 48.85341,
+   "lon": 2.3488,
+   "nombre": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement",
+   "pais": "France",
+   "pais_codigo": "FR"
+  },
+  "004wre089": {
+   "ciudad": "Trondheim",
+   "lat": 63.43049,
+   "lon": 10.39506,
+   "nombre": "SINTEF Ocean",
+   "pais": "Norway",
+   "pais_codigo": "NO"
+  },
+  "006zjws59": {
+   "ciudad": "Vic",
+   "lat": 41.93012,
+   "lon": 2.25486,
+   "nombre": "Universitat de Vic - Universitat Central de Catalunya",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "00cvxb145": {
+   "ciudad": "Seattle",
+   "lat": 47.60621,
+   "lon": -122.33207,
+   "nombre": "University of Washington",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "00g5sqv46": {
+   "ciudad": "Tarragona",
+   "lat": 41.11905,
+   "lon": 1.24544,
+   "nombre": "Universitat Rovira i Virgili",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "00hq0e369": {
+   "ciudad": "Nacogdoches",
+   "lat": 31.60351,
+   "lon": -94.65549,
+   "nombre": "Stephen F. Austin State University",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "00j2a7k55": {
+   "ciudad": "Jiaxing",
+   "lat": 30.7522,
+   "lon": 120.75,
+   "nombre": "Jiaxing University",
+   "pais": "China",
+   "pais_codigo": "CN"
+  },
+  "00js3aw79": {
+   "ciudad": "Changchun",
+   "lat": 43.88,
+   "lon": 125.32278,
+   "nombre": "Jilin University",
+   "pais": "China",
+   "pais_codigo": "CN"
+  },
+  "00twb6c09": {
+   "ciudad": "Riga",
+   "lat": 56.946,
+   "lon": 24.10589,
+   "nombre": "Riga Technical University",
+   "pais": "Latvia",
+   "pais_codigo": "LV"
+  },
+  "00v8fdc16": {
+   "ciudad": "Querétaro City",
+   "lat": 20.58806,
+   "lon": -100.38806,
+   "nombre": "Autonomous University of Queretaro",
+   "pais": "Mexico",
+   "pais_codigo": "MX"
+  },
+  "00wge5k78": {
+   "ciudad": "Tromsø",
+   "lat": 69.6489,
+   "lon": 18.95508,
+   "nombre": "UiT The Arctic University of Norway",
+   "pais": "Norway",
+   "pais_codigo": "NO"
+  },
+  "00wjc7c48": {
+   "ciudad": "Milan",
+   "lat": 45.46427,
+   "lon": 9.18951,
+   "nombre": "University of Milan",
+   "pais": "Italy",
+   "pais_codigo": "IT"
+  },
+  "01239b432": {
+   "ciudad": "Terrassa",
+   "lat": 41.56667,
+   "lon": 2.01667,
+   "nombre": "Consorci Sanitari de Terrassa",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "012f7tj07": {
+   "ciudad": "Madrid",
+   "lat": 40.4165,
+   "lon": -3.70256,
+   "nombre": "Telefónica (Spain)",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "012zh9h13": {
+   "ciudad": "Caldes de Montbui",
+   "lat": 41.63333,
+   "lon": 2.16667,
+   "nombre": "Institute of Agrifood Research and Technology",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "0168r3w48": {
+   "ciudad": "San Diego",
+   "lat": 32.71571,
+   "lon": -117.16472,
+   "nombre": "University of California San Diego",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "01d71vb80": {
+   "ciudad": "Oviedo",
+   "lat": 43.36029,
+   "lon": -5.84476,
+   "nombre": "Fernández-Vega Ophthalmological Institute",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "01ej9dk98": {
+   "ciudad": "Melbourne",
+   "lat": -37.814,
+   "lon": 144.96332,
+   "nombre": "The University of Melbourne",
+   "pais": "Australia",
+   "pais_codigo": "AU"
+  },
+  "01fdxwh83": {
+   "ciudad": "Borås",
+   "lat": 57.72101,
+   "lon": 12.9401,
+   "nombre": "University of Borås",
+   "pais": "Sweden",
+   "pais_codigo": "SE"
+  },
+  "01xdxns91": {
+   "ciudad": "Girona",
+   "lat": 41.98311,
+   "lon": 2.82493,
+   "nombre": "Universitat de Girona",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "01xt2dr21": {
+   "ciudad": "Xuzhou",
+   "lat": 34.20442,
+   "lon": 117.28386,
+   "nombre": "China University of Mining and Technology",
+   "pais": "China",
+   "pais_codigo": "CN"
+  },
+  "01y2jtd41": {
+   "ciudad": "Madison",
+   "lat": 43.07305,
+   "lon": -89.40123,
+   "nombre": "University of Wisconsin–Madison",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "01zbnvs85": {
+   "ciudad": "Menlo Park",
+   "lat": 37.45383,
+   "lon": -122.18219,
+   "nombre": "Meta (United States)",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "020hwjq30": {
+   "ciudad": "Espoo",
+   "lat": 60.2052,
+   "lon": 24.6522,
+   "nombre": "Aalto University",
+   "pais": "Finland",
+   "pais_codigo": "FI"
+  },
+  "021018s57": {
+   "ciudad": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "nombre": "Universitat de Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "02b9aym09": {
+   "ciudad": "Washington",
+   "lat": 38.89511,
+   "lon": -77.03637,
+   "nombre": "Gallaudet University",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "02j9n6e35": {
+   "ciudad": "Cerdanyola del Vallès",
+   "lat": 41.48569,
+   "lon": 2.12171,
+   "nombre": "ALBA Synchrotron (Spain)",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "02jx3x895": {
+   "ciudad": "London",
+   "lat": 51.50853,
+   "lon": -0.12574,
+   "nombre": "University College London",
+   "pais": "United Kingdom",
+   "pais_codigo": "GB"
+  },
+  "02p0gd045": {
+   "ciudad": "Madrid",
+   "lat": 40.4165,
+   "lon": -3.70256,
+   "nombre": "Universidad Complutense de Madrid",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "02qsmb048": {
+   "ciudad": "Belgrade",
+   "lat": 44.80401,
+   "lon": 20.46513,
+   "nombre": "University of Belgrade",
+   "pais": "Serbia",
+   "pais_codigo": "RS"
+  },
+  "02tbr6331": {
+   "ciudad": "Berlin",
+   "lat": 52.52437,
+   "lon": 13.41053,
+   "nombre": "Fraunhofer Institute for Telecommunications, Heinrich Hertz Institute",
+   "pais": "Germany",
+   "pais_codigo": "DE"
+  },
+  "02vg7mz57": {
+   "ciudad": "Guangzhou",
+   "lat": 23.11667,
+   "lon": 113.25,
+   "nombre": "Guangdong Pharmaceutical University",
+   "pais": "China",
+   "pais_codigo": "CN"
+  },
+  "02wn5qz54": {
+   "ciudad": "St Andrews",
+   "lat": 56.33871,
+   "lon": -2.79902,
+   "nombre": "University of St Andrews",
+   "pais": "United Kingdom",
+   "pais_codigo": "GB"
+  },
+  "039je3989": {
+   "ciudad": "Burlington",
+   "lat": 44.47588,
+   "lon": -73.21207,
+   "nombre": "Dynapower (United States)",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "03e10x626": {
+   "ciudad": "Palma",
+   "lat": 39.56939,
+   "lon": 2.65024,
+   "nombre": "Universitat de les Illes Balears",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "03ej8a714": {
+   "ciudad": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "nombre": "International Center for Numerical Methods in Engineering",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "03hp1m080": {
+   "ciudad": "Arrasate / Mondragón",
+   "lat": 43.06441,
+   "lon": -2.48977,
+   "nombre": "Ikerlan",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "03mb6wj31": {
+   "ciudad": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "nombre": "Universitat Politècnica de Catalunya",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "03taz7m60": {
+   "ciudad": "Los Angeles",
+   "lat": 34.05223,
+   "lon": -118.24368,
+   "nombre": "University of Southern California",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "046ak2485": {
+   "ciudad": "Berlin",
+   "lat": 52.52437,
+   "lon": 13.41053,
+   "nombre": "Freie Universität Berlin",
+   "pais": "Germany",
+   "pais_codigo": "DE"
+  },
+  "048a87296": {
+   "ciudad": "Uppsala",
+   "lat": 59.85882,
+   "lon": 17.63889,
+   "nombre": "Uppsala University",
+   "pais": "Sweden",
+   "pais_codigo": "SE"
+  },
+  "04japw488": {
+   "ciudad": "Enugu",
+   "lat": 6.44132,
+   "lon": 7.49883,
+   "nombre": "Godfrey Okoye University",
+   "pais": "Nigeria",
+   "pais_codigo": "NG"
+  },
+  "04m5j1k67": {
+   "ciudad": "Aalborg",
+   "lat": 57.048,
+   "lon": 9.9187,
+   "nombre": "Aalborg University",
+   "pais": "Denmark",
+   "pais_codigo": "DK"
+  },
+  "04njjy449": {
+   "ciudad": "Granada",
+   "lat": 37.18817,
+   "lon": -3.60667,
+   "nombre": "Universidad de Granada",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "04p9k2z50": {
+   "ciudad": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "nombre": "Universitat Ramon Llull",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "04pe1sa24": {
+   "ciudad": "Guayaquil",
+   "lat": -2.19616,
+   "lon": -79.88621,
+   "nombre": "Universidad Ecotec",
+   "pais": "Ecuador",
+   "pais_codigo": "EC"
+  },
+  "04qenc566": {
+   "ciudad": "Guayaquil",
+   "lat": -2.19616,
+   "lon": -79.88621,
+   "nombre": "Escuela Superior Politecnica del Litoral",
+   "pais": "Ecuador",
+   "pais_codigo": "EC"
+  },
+  "04wxdxa47": {
+   "ciudad": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "nombre": "Hospital Universitari Germans Trias i Pujol",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "04zaypm56": {
+   "ciudad": "Rome",
+   "lat": 41.89193,
+   "lon": 12.51133,
+   "nombre": "National Research Council",
+   "pais": "Italy",
+   "pais_codigo": "IT"
+  },
+  "050c3cw24": {
+   "ciudad": "Lleida",
+   "lat": 41.61674,
+   "lon": 0.62218,
+   "nombre": "Universitat de Lleida",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "052g8jq94": {
+   "ciudad": "Cerdanyola del Vallès",
+   "lat": 41.49109,
+   "lon": 2.14079,
+   "nombre": "Universitat Autònoma de Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "056h71x09": {
+   "ciudad": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "nombre": "Institute for Bioengineering of Catalonia",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "05rdf8595": {
+   "ciudad": "Vigo",
+   "lat": 42.23282,
+   "lon": -8.72264,
+   "nombre": "Universidade de Vigo",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "05rrcem69": {
+   "ciudad": "Davis",
+   "lat": 38.54491,
+   "lon": -121.74052,
+   "nombre": "University of California, Davis",
+   "pais": "United States",
+   "pais_codigo": "US"
+  },
+  "05sd8tv96": {
+   "ciudad": "Barcelona",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "nombre": "Barcelona Supercomputing Center",
+   "pais": "Spain",
+   "pais_codigo": "ES"
+  },
+  "05x2bcf33": {
+   "ciudad": "Pittsburgh",
+   "lat": 40.44062,
+   "lon": -79.99589,
+   "nombre": "Carnegie Mellon University",
+   "pais": "United States",
+   "pais_codigo": "US"
+  }
+ },
+ "texto": {
+  "aalborg university,": "04m5j1k67",
+  "abb": "",
+  "alba synchrotron light source": "",
+  "amazon": "",
+  "brandenburg university of applied sciences": "",
+  "canadian centre for isotopic microanalysis": "",
+  "college of civil engineering and architecture, jiaxing university": "00j2a7k55",
+  "commonwealth scientific and industrial research organization (csiro)": "",
+  "euss": "",
+  "facebook": "01zbnvs85",
+  "faculty of civil engineering, university of belgrade": "02qsmb048",
+  "fundacio probitas": "",
+  "heildelberg university": "04japw488",
+  "novotec - process safety and major accidents department": "",
+  "robert bosch gmbh": "",
+  "telefonica gtco": "",
+  "the european synchroton": "",
+  "the european synchrotron": "",
+  "universita di corsica pasquale paoli": "",
+  "universitat de lleida": "050c3cw24",
+  "university gent": "",
+  "university of belgrade, faculty of civil engineering": "02qsmb048",
+  "zini prodotti alimentari": ""
+ }
+}

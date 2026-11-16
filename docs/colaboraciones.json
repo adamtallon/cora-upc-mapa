@@ -1,0 +1,1208 @@
+{
+ "generado": "2026-11-16",
+ "coleccion": "upc",
+ "origen": {
+  "nombre": "Universitat Politècnica de Catalunya",
+  "lat": 41.38879,
+  "lon": 2.15899
+ },
+ "datasets_con_colaboracion": 58,
+ "instituciones": [
+  {
+   "ror": "https://ror.org/05sd8tv96",
+   "nombre": "Barcelona Supercomputing Center",
+   "ciudad": "Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "internacional": false,
+   "n_datasets": 5,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2050",
+     "titulo": "30P30N Wing LES turbulence statistics",
+     "url": "https://doi.org/10.34810/DATA2050",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA2530",
+     "titulo": "Replication Data for: Atmospheric boundary layer over urban roughness: validation of large-eddy simulation",
+     "url": "https://doi.org/10.34810/DATA2530",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3376",
+     "titulo": "CityML: A high-fidelity LES urban flow dataset",
+     "url": "https://doi.org/10.34810/DATA3376",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3545",
+     "titulo": "BCN16-HFWind: A High-Fidelity LES Dataset and its Application to Data-Driven Urban Flow Predictions",
+     "url": "https://doi.org/10.34810/DATA3545",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA693",
+     "titulo": "Replication Data for: Sign language translation for instructional videos",
+     "url": "https://doi.org/10.34810/DATA693",
+     "anio": "2023"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/02qsmb048",
+   "nombre": "University of Belgrade",
+   "ciudad": "Belgrade",
+   "pais": "Serbia",
+   "pais_codigo": "RS",
+   "lat": 44.80401,
+   "lon": 20.46513,
+   "internacional": true,
+   "n_datasets": 5,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3314",
+     "titulo": "Recycled aggregate concrete mix design and testing results",
+     "url": "https://doi.org/10.34810/DATA3314",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3315",
+     "titulo": "Column base tests",
+     "url": "https://doi.org/10.34810/DATA3315",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3379",
+     "titulo": "Column-to-foundation connection test",
+     "url": "https://doi.org/10.34810/DATA3379",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3380",
+     "titulo": "Beam connection test",
+     "url": "https://doi.org/10.34810/DATA3380",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3381",
+     "titulo": "Column connection test",
+     "url": "https://doi.org/10.34810/DATA3381",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/012zh9h13",
+   "nombre": "Institute of Agrifood Research and Technology",
+   "ciudad": "Caldes de Montbui",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.63333,
+   "lon": 2.16667,
+   "internacional": false,
+   "n_datasets": 4,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1882",
+     "titulo": "Sensory perception and purchase behaviour dataset for plant-based products",
+     "url": "https://doi.org/10.34810/DATA1882",
+     "anio": "2024"
+    },
+    {
+     "doi": "doi:10.34810/DATA1920",
+     "titulo": "Attitudes, willingness to pay, and sensory evaluations of consumers for innovative legume-based gnocchi products",
+     "url": "https://doi.org/10.34810/DATA1920",
+     "anio": "2024"
+    },
+    {
+     "doi": "doi:10.34810/DATA2097",
+     "titulo": "Orchard farmers' behavioral intentions and willingness to adopt pesticide-reducing innovations",
+     "url": "https://doi.org/10.34810/DATA2097",
+     "anio": "2025"
+    },
+    {
+     "doi": "doi:10.34810/DATA2108",
+     "titulo": "Assessing consumer support for pesticide reduction in vineyards and olive groves using choice experiment and contingent valuation methods",
+     "url": "https://doi.org/10.34810/DATA2108",
+     "anio": "2025"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/021018s57",
+   "nombre": "Universitat de Barcelona",
+   "ciudad": "Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "internacional": false,
+   "n_datasets": 4,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1413",
+     "titulo": "Characterization of ‘CCMb’ calcite from Carrara marble as reference material for microanalysis",
+     "url": "https://doi.org/10.34810/DATA1413",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA2224",
+     "titulo": "Replication data for: Eye tracking and machine learning to assess cognitive impairment in post-COVID-19 patients",
+     "url": "https://doi.org/10.34810/DATA2224",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA2971",
+     "titulo": "Replication data for: Machine learning integration of eye-tracking and cognitive screening for detecting cognitive impairment",
+     "url": "https://doi.org/10.34810/DATA2971",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA739",
+     "titulo": "Dades publicació en accés obert de les universitats catalanes 2011-2021",
+     "url": "https://doi.org/10.34810/DATA739",
+     "anio": "2023"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/04m5j1k67",
+   "nombre": "Aalborg University",
+   "ciudad": "Aalborg",
+   "pais": "Denmark",
+   "pais_codigo": "DK",
+   "lat": 57.048,
+   "lon": 9.9187,
+   "internacional": true,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2547",
+     "titulo": "Airgilab September-October 2024",
+     "url": "https://doi.org/10.34810/DATA2547",
+     "anio": "2025"
+    },
+    {
+     "doi": "doi:10.34810/DATA2963",
+     "titulo": "Replication data for: PosGNN: a graph neural network-based multimodal data fusion for indoor positioning in industrial non-line-of-sight scenarios",
+     "url": "https://doi.org/10.34810/DATA2963",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00v8fdc16",
+   "nombre": "Autonomous University of Queretaro",
+   "ciudad": "Querétaro City",
+   "pais": "Mexico",
+   "pais_codigo": "MX",
+   "lat": 20.58806,
+   "lon": -100.38806,
+   "internacional": true,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2500",
+     "titulo": "Rotating electromechanical system dataset for condition monitoring",
+     "url": "https://doi.org/10.34810/DATA2500",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3572",
+     "titulo": "A Multi-domain experimental dataset for condition monitoring of an electromechanical drivetrain under stationary and non-stationary operating conditions with single and combined faults",
+     "url": "https://doi.org/10.34810/DATA3572",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/01239b432",
+   "nombre": "Consorci Sanitari de Terrassa",
+   "ciudad": "Terrassa",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.56667,
+   "lon": 2.01667,
+   "internacional": false,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2224",
+     "titulo": "Replication data for: Eye tracking and machine learning to assess cognitive impairment in post-COVID-19 patients",
+     "url": "https://doi.org/10.34810/DATA2224",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA2971",
+     "titulo": "Replication data for: Machine learning integration of eye-tracking and cognitive screening for detecting cognitive impairment",
+     "url": "https://doi.org/10.34810/DATA2971",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/039je3989",
+   "nombre": "Dynapower (United States)",
+   "ciudad": "Burlington",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 44.47588,
+   "lon": -73.21207,
+   "internacional": true,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2928",
+     "titulo": "Replication Data for: Distributed direct power sliding-mode control for islanded AC microgrids",
+     "url": "https://doi.org/10.34810/DATA2928",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA2929",
+     "titulo": "Replication Data for: A novel complex power sharing based on sliding mode control for islanded AC microgrids",
+     "url": "https://doi.org/10.34810/DATA2929",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/04qenc566",
+   "nombre": "Escuela Superior Politecnica del Litoral",
+   "ciudad": "Guayaquil",
+   "pais": "Ecuador",
+   "pais_codigo": "EC",
+   "lat": -2.19616,
+   "lon": -79.88621,
+   "internacional": true,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1011",
+     "titulo": "Replication Data for: Structural health monitoring of jacket-type support structures in offshore wind turbines: a comprehensive dataset for bolt loosening detection through vibrational analysis",
+     "url": "https://doi.org/10.34810/DATA1011",
+     "anio": "2025"
+    },
+    {
+     "doi": "doi:10.34810/DATA2304",
+     "titulo": "Replication Data for: Detection of wind turbine rotor imbalance using unsupervised output-only vibration data analysis",
+     "url": "https://doi.org/10.34810/DATA2304",
+     "anio": "2025"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/004wre089",
+   "nombre": "SINTEF Ocean",
+   "ciudad": "Trondheim",
+   "pais": "Norway",
+   "pais_codigo": "NO",
+   "lat": 63.43049,
+   "lon": 10.39506,
+   "internacional": true,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2842",
+     "titulo": "Characterization of natural-based nanoparticles for skin applications",
+     "url": "https://doi.org/10.34810/DATA2842",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA2848",
+     "titulo": "Replication data for: Marine-derived fatty acid–based nanoparticles for ocular health and retinal protection",
+     "url": "https://doi.org/10.34810/DATA2848",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/052g8jq94",
+   "nombre": "Universitat Autònoma de Barcelona",
+   "ciudad": "Cerdanyola del Vallès",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.49109,
+   "lon": 2.14079,
+   "internacional": false,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2820",
+     "titulo": "Replication Data for: Functional analysis of two novel retinitis pigmentosa mutations reveals structural role of the third transmembrane helix in rhodopsin photoactivation",
+     "url": "https://doi.org/10.34810/DATA2820",
+     "anio": "2025"
+    },
+    {
+     "doi": "doi:10.34810/DATA2864",
+     "titulo": "Replication Data for: G-protein activation of the dark-state visual G protein-coupled receptor rhodopsin by releasing critical structural constraints",
+     "url": "https://doi.org/10.34810/DATA2864",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/050c3cw24",
+   "nombre": "Universitat de Lleida",
+   "ciudad": "Lleida",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.61674,
+   "lon": 0.62218,
+   "internacional": false,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1550",
+     "titulo": "Replication data for: Thermal Performance and Microclimate Modulation: A Year-Long, Multi-Site Study of Operational Green Roofs in Barcelona under Severe Water Scarcity",
+     "url": "https://doi.org/10.34810/DATA1550",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA983",
+     "titulo": "Interdisciplinary set of indicators for the assessment of green roofs",
+     "url": "https://doi.org/10.34810/DATA983",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/02j9n6e35",
+   "nombre": "ALBA Synchrotron (Spain)",
+   "ciudad": "Cerdanyola del Vallès",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.48569,
+   "lon": 2.12171,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3206",
+     "titulo": "Replication data for: Colistin delivery by poly(dimethylsiloxane)-g-poly(ethylene oxide) vesicles prevents resistance development in Gram negatives",
+     "url": "https://doi.org/10.34810/DATA3206",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/020hwjq30",
+   "nombre": "Aalto University",
+   "ciudad": "Espoo",
+   "pais": "Finland",
+   "pais_codigo": "FI",
+   "lat": 60.2052,
+   "lon": 24.6522,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3906",
+     "titulo": "Replication data for Effect of the colour on the solar energy harvesting capacity of woven sunshade fabrics as solar cell covers",
+     "url": "https://doi.org/10.34810/DATA3906",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/05x2bcf33",
+   "nombre": "Carnegie Mellon University",
+   "ciudad": "Pittsburgh",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 40.44062,
+   "lon": -79.99589,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA33",
+     "titulo": "How2Sign: a large-scale multimodal dataset for continuous American Sign Language",
+     "url": "https://doi.org/10.34810/DATA33",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/01xt2dr21",
+   "nombre": "China University of Mining and Technology",
+   "ciudad": "Xuzhou",
+   "pais": "China",
+   "pais_codigo": "CN",
+   "lat": 34.20442,
+   "lon": 117.28386,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2710",
+     "titulo": "Replication Data for: A high-order nodal spectral element method for 3-D magnetotelluric forward modelling",
+     "url": "https://doi.org/10.34810/DATA2710",
+     "anio": "2025"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/01d71vb80",
+   "nombre": "Fernández-Vega Ophthalmological Institute",
+   "ciudad": "Oviedo",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 43.36029,
+   "lon": -5.84476,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2662",
+     "titulo": "Replication Data for: Optical and simulated visual outcomes of two presbyopia-correcting intraocular lenses tested in clinically relevant decentration and tilt conditions",
+     "url": "https://doi.org/10.34810/DATA2662",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/02tbr6331",
+   "nombre": "Fraunhofer Institute for Telecommunications, Heinrich Hertz Institute",
+   "ciudad": "Berlin",
+   "pais": "Germany",
+   "pais_codigo": "DE",
+   "lat": 52.52437,
+   "lon": 13.41053,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1143",
+     "titulo": "Simulation and experimental data of frequency domain and time domain optical signal measurements for optical network digital twins",
+     "url": "https://doi.org/10.34810/DATA1143",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/046ak2485",
+   "nombre": "Freie Universität Berlin",
+   "ciudad": "Berlin",
+   "pais": "Germany",
+   "pais_codigo": "DE",
+   "lat": 52.52437,
+   "lon": 13.41053,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2864",
+     "titulo": "Replication Data for: G-protein activation of the dark-state visual G protein-coupled receptor rhodopsin by releasing critical structural constraints",
+     "url": "https://doi.org/10.34810/DATA2864",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/02b9aym09",
+   "nombre": "Gallaudet University",
+   "ciudad": "Washington",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 38.89511,
+   "lon": -77.03637,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA33",
+     "titulo": "How2Sign: a large-scale multimodal dataset for continuous American Sign Language",
+     "url": "https://doi.org/10.34810/DATA33",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/04japw488",
+   "nombre": "Godfrey Okoye University",
+   "ciudad": "Enugu",
+   "pais": "Nigeria",
+   "pais_codigo": "NG",
+   "lat": 6.44132,
+   "lon": 7.49883,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1413",
+     "titulo": "Characterization of ‘CCMb’ calcite from Carrara marble as reference material for microanalysis",
+     "url": "https://doi.org/10.34810/DATA1413",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/02vg7mz57",
+   "nombre": "Guangdong Pharmaceutical University",
+   "ciudad": "Guangzhou",
+   "pais": "China",
+   "pais_codigo": "CN",
+   "lat": 23.11667,
+   "lon": 113.25,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3229",
+     "titulo": "Replication Data for: Computational insights into the activation mechanism of CXCR4: implication for the design of small molecule agonists",
+     "url": "https://doi.org/10.34810/DATA3229",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/001jx2139",
+   "nombre": "Hospital Sant Joan de Déu Barcelona",
+   "ciudad": "Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1054",
+     "titulo": "Nódulos coroideos en edad pediátrica",
+     "url": "https://doi.org/10.34810/DATA1054",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/04wxdxa47",
+   "nombre": "Hospital Universitari Germans Trias i Pujol",
+   "ciudad": "Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2962",
+     "titulo": "A new dataset for millimeter-wave radar vital sensing with reference signals",
+     "url": "https://doi.org/10.34810/DATA2962",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/03hp1m080",
+   "nombre": "Ikerlan",
+   "ciudad": "Arrasate / Mondragón",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 43.06441,
+   "lon": -2.48977,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1072",
+     "titulo": "Experimental datasets of UNICO 5G TIMING project",
+     "url": "https://doi.org/10.34810/DATA1072",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/003vg9w96",
+   "nombre": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement",
+   "ciudad": "Paris",
+   "pais": "France",
+   "pais_codigo": "FR",
+   "lat": 48.85341,
+   "lon": 2.3488,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1882",
+     "titulo": "Sensory perception and purchase behaviour dataset for plant-based products",
+     "url": "https://doi.org/10.34810/DATA1882",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/056h71x09",
+   "nombre": "Institute for Bioengineering of Catalonia",
+   "ciudad": "Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3733",
+     "titulo": "Replication data for:  Multiscale wrinkling and folding dynamics in epithelial shells",
+     "url": "https://doi.org/10.34810/DATA3733",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/03ej8a714",
+   "nombre": "International Center for Numerical Methods in Engineering",
+   "ciudad": "Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3521",
+     "titulo": "State of practice in the AECO sector: a qualitative corpus on technology adoption, digital waste, and human centered infrastructure operations",
+     "url": "https://doi.org/10.34810/DATA3521",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00j2a7k55",
+   "nombre": "Jiaxing University",
+   "ciudad": "Jiaxing",
+   "pais": "China",
+   "pais_codigo": "CN",
+   "lat": 30.7522,
+   "lon": 120.75,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2213",
+     "titulo": "Set of environmental, housing, household income and labour variables used throughout the EnerValor2 project",
+     "url": "https://doi.org/10.34810/DATA2213",
+     "anio": "2025"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00js3aw79",
+   "nombre": "Jilin University",
+   "ciudad": "Changchun",
+   "pais": "China",
+   "pais_codigo": "CN",
+   "lat": 43.88,
+   "lon": 125.32278,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2710",
+     "titulo": "Replication Data for: A high-order nodal spectral element method for 3-D magnetotelluric forward modelling",
+     "url": "https://doi.org/10.34810/DATA2710",
+     "anio": "2025"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/01zbnvs85",
+   "nombre": "Meta (United States)",
+   "ciudad": "Menlo Park",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 37.45383,
+   "lon": -122.18219,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA33",
+     "titulo": "How2Sign: a large-scale multimodal dataset for continuous American Sign Language",
+     "url": "https://doi.org/10.34810/DATA33",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/04zaypm56",
+   "nombre": "National Research Council",
+   "ciudad": "Rome",
+   "pais": "Italy",
+   "pais_codigo": "IT",
+   "lat": 41.89193,
+   "lon": 12.51133,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1885",
+     "titulo": "Packet latency measurements in experimental TSN-capable networks",
+     "url": "https://doi.org/10.34810/DATA1885",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00twb6c09",
+   "nombre": "Riga Technical University",
+   "ciudad": "Riga",
+   "pais": "Latvia",
+   "pais_codigo": "LV",
+   "lat": 56.946,
+   "lon": 24.10589,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3335",
+     "titulo": "Pilot_4-Assessment_of_concrete_at_demolition_site",
+     "url": "https://doi.org/10.34810/DATA3335",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00hq0e369",
+   "nombre": "Stephen F. Austin State University",
+   "ciudad": "Nacogdoches",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 31.60351,
+   "lon": -94.65549,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1413",
+     "titulo": "Characterization of ‘CCMb’ calcite from Carrara marble as reference material for microanalysis",
+     "url": "https://doi.org/10.34810/DATA1413",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/012f7tj07",
+   "nombre": "Telefónica (Spain)",
+   "ciudad": "Madrid",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 40.4165,
+   "lon": -3.70256,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2425",
+     "titulo": "Network traffic measurements for 4G, 5G and 6G services",
+     "url": "https://doi.org/10.34810/DATA2425",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/01ej9dk98",
+   "nombre": "The University of Melbourne",
+   "ciudad": "Melbourne",
+   "pais": "Australia",
+   "pais_codigo": "AU",
+   "lat": -37.814,
+   "lon": 144.96332,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3164",
+     "titulo": "Replication data for: Context-adaptive deep learning for sustainable product recommendation: Application to concrete",
+     "url": "https://doi.org/10.34810/DATA3164",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00wge5k78",
+   "nombre": "UiT The Arctic University of Norway",
+   "ciudad": "Tromsø",
+   "pais": "Norway",
+   "pais_codigo": "NO",
+   "lat": 69.6489,
+   "lon": 18.95508,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3335",
+     "titulo": "Pilot_4-Assessment_of_concrete_at_demolition_site",
+     "url": "https://doi.org/10.34810/DATA3335",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/02p0gd045",
+   "nombre": "Universidad Complutense de Madrid",
+   "ciudad": "Madrid",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 40.4165,
+   "lon": -3.70256,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2662",
+     "titulo": "Replication Data for: Optical and simulated visual outcomes of two presbyopia-correcting intraocular lenses tested in clinically relevant decentration and tilt conditions",
+     "url": "https://doi.org/10.34810/DATA2662",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/04pe1sa24",
+   "nombre": "Universidad Ecotec",
+   "ciudad": "Guayaquil",
+   "pais": "Ecuador",
+   "pais_codigo": "EC",
+   "lat": -2.19616,
+   "lon": -79.88621,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2304",
+     "titulo": "Replication Data for: Detection of wind turbine rotor imbalance using unsupervised output-only vibration data analysis",
+     "url": "https://doi.org/10.34810/DATA2304",
+     "anio": "2025"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/04njjy449",
+   "nombre": "Universidad de Granada",
+   "ciudad": "Granada",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 37.18817,
+   "lon": -3.60667,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3737",
+     "titulo": "Replication Data for: Assessment of the consistency between YouTube videos and scientific evidence on paediatric myopia control",
+     "url": "https://doi.org/10.34810/DATA3737",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/05rdf8595",
+   "nombre": "Universidade de Vigo",
+   "ciudad": "Vigo",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 42.23282,
+   "lon": -8.72264,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1877",
+     "titulo": "SURVIWEC - CIEM",
+     "url": "https://doi.org/10.34810/DATA1877",
+     "anio": "2025"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/04p9k2z50",
+   "nombre": "Universitat Ramon Llull",
+   "ciudad": "Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1633",
+     "titulo": "PUBLICPLAN",
+     "url": "https://doi.org/10.34810/DATA1633",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00g5sqv46",
+   "nombre": "Universitat Rovira i Virgili",
+   "ciudad": "Tarragona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.11905,
+   "lon": 1.24544,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3519",
+     "titulo": "Replication data for: Reprocessable disulfide-based vitrimers with adhesive properties",
+     "url": "https://doi.org/10.34810/DATA3519",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/01xdxns91",
+   "nombre": "Universitat de Girona",
+   "ciudad": "Girona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.98311,
+   "lon": 2.82493,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1633",
+     "titulo": "PUBLICPLAN",
+     "url": "https://doi.org/10.34810/DATA1633",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/006zjws59",
+   "nombre": "Universitat de Vic - Universitat Central de Catalunya",
+   "ciudad": "Vic",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.93012,
+   "lon": 2.25486,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3271",
+     "titulo": "Replication data for: Sheding light on the formation mechanisms of Islamic polychrome lusters :  a Cu, Fe, Ag-micro XANES study",
+     "url": "https://doi.org/10.34810/DATA3271",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/03e10x626",
+   "nombre": "Universitat de les Illes Balears",
+   "ciudad": "Palma",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 39.56939,
+   "lon": 2.65024,
+   "internacional": false,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3552",
+     "titulo": "Replication Data for: Instructional engineering for STEM agency and identity: the evidence-based design of mission future grounded in RoseS-C and PISA 2025",
+     "url": "https://doi.org/10.34810/DATA3552",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/02jx3x895",
+   "nombre": "University College London",
+   "ciudad": "London",
+   "pais": "United Kingdom",
+   "pais_codigo": "GB",
+   "lat": 51.50853,
+   "lon": -0.12574,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2979",
+     "titulo": "Replication data for: Sustainability and circularity in agrivoltaic systems review",
+     "url": "https://doi.org/10.34810/DATA2979",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/01fdxwh83",
+   "nombre": "University of Borås",
+   "ciudad": "Borås",
+   "pais": "Sweden",
+   "pais_codigo": "SE",
+   "lat": 57.72101,
+   "lon": 12.9401,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2898",
+     "titulo": "Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
+     "url": "https://doi.org/10.34810/DATA2898",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/0168r3w48",
+   "nombre": "University of California San Diego",
+   "ciudad": "San Diego",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 32.71571,
+   "lon": -117.16472,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3229",
+     "titulo": "Replication Data for: Computational insights into the activation mechanism of CXCR4: implication for the design of small molecule agonists",
+     "url": "https://doi.org/10.34810/DATA3229",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/05rrcem69",
+   "nombre": "University of California, Davis",
+   "ciudad": "Davis",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 38.54491,
+   "lon": -121.74052,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA190",
+     "titulo": "Replication data for fast quantum key distribution",
+     "url": "https://doi.org/10.34810/DATA190",
+     "anio": "2022"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00wjc7c48",
+   "nombre": "University of Milan",
+   "ciudad": "Milan",
+   "pais": "Italy",
+   "pais_codigo": "IT",
+   "lat": 45.46427,
+   "lon": 9.18951,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1920",
+     "titulo": "Attitudes, willingness to pay, and sensory evaluations of consumers for innovative legume-based gnocchi products",
+     "url": "https://doi.org/10.34810/DATA1920",
+     "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/03taz7m60",
+   "nombre": "University of Southern California",
+   "ciudad": "Los Angeles",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 34.05223,
+   "lon": -118.24368,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3229",
+     "titulo": "Replication Data for: Computational insights into the activation mechanism of CXCR4: implication for the design of small molecule agonists",
+     "url": "https://doi.org/10.34810/DATA3229",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/02wn5qz54",
+   "nombre": "University of St Andrews",
+   "ciudad": "St Andrews",
+   "pais": "United Kingdom",
+   "pais_codigo": "GB",
+   "lat": 56.33871,
+   "lon": -2.79902,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1413",
+     "titulo": "Characterization of ‘CCMb’ calcite from Carrara marble as reference material for microanalysis",
+     "url": "https://doi.org/10.34810/DATA1413",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/00cvxb145",
+   "nombre": "University of Washington",
+   "ciudad": "Seattle",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 47.60621,
+   "lon": -122.33207,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1413",
+     "titulo": "Characterization of ‘CCMb’ calcite from Carrara marble as reference material for microanalysis",
+     "url": "https://doi.org/10.34810/DATA1413",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/01y2jtd41",
+   "nombre": "University of Wisconsin–Madison",
+   "ciudad": "Madison",
+   "pais": "United States",
+   "pais_codigo": "US",
+   "lat": 43.07305,
+   "lon": -89.40123,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1413",
+     "titulo": "Characterization of ‘CCMb’ calcite from Carrara marble as reference material for microanalysis",
+     "url": "https://doi.org/10.34810/DATA1413",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/048a87296",
+   "nombre": "Uppsala University",
+   "ciudad": "Uppsala",
+   "pais": "Sweden",
+   "pais_codigo": "SE",
+   "lat": 59.85882,
+   "lon": 17.63889,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1877",
+     "titulo": "SURVIWEC - CIEM",
+     "url": "https://doi.org/10.34810/DATA1877",
+     "anio": "2025"
+    }
+   ]
+  }
+ ]
+}

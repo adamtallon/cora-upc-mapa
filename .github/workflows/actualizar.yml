@@ -29,6 +29,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/datos_mapa.json docs/pendientes.json scripts/geocache.json
+          git add docs/colaboraciones.json docs/pendientes_colaboraciones.json scripts/rorcache.json
           if git diff --cached --quiet; then
             echo "Sense canvis."
           else

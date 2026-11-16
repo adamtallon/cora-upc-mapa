@@ -9,8 +9,11 @@ Se actualiza sola cada lunes mediante GitHub Actions. No necesita token: solo le
 docs/index.html              La web del mapa (Leaflet)
 docs/datos_mapa.json         Datos que lee el mapa (se regenera solo)
 docs/pendientes.json         Ciudades que no se han podido situar
+docs/colaboraciones.json     Instituciones colaboradoras (afiliaciones + ROR); se regenera solo
+docs/pendientes_colaboraciones.json   Afiliaciones que no se han podido situar
 scripts/generar_json.py      Descarga los datos de CORA y genera el JSON
 scripts/geocache.json        Memoria de ciudades ya geolocalizadas
+scripts/rorcache.json        Memoria de consultas a ROR (instituciones y afiliaciones)
 .github/workflows/actualizar.yml   Tarea semanal automática
 ```
 
@@ -50,3 +53,18 @@ A partir de ahí, cada lunes se actualiza sola.
 - Se sitúan los datasets con coordenadas (punto o área) o con ciudad. Los que solo tienen país o provincia no tienen un punto concreto y no se dibujan.
 - Los borradores y los registros que la API no puede leer (por ejemplo, los recolectados de UPCommons) quedan fuera.
 - Las ubicaciones fuera de España se ocultan por defecto y se activan con el interruptor.
+
+## Mapa de colaboraciones
+
+La pestaña **Colaboraciones** dibuja líneas desde Barcelona hasta las instituciones de las afiliaciones de los
+autores de los datasets (la UPC no cuenta). El grosor de la línea y el tamaño del círculo dependen del número de
+datasets compartidos; las instituciones de una misma ciudad se agrupan en un solo punto.
+
+- Las coordenadas salen del registro [ROR](https://ror.org) (API v2, sin token). Si una afiliación no lleva ROR,
+  el script prueba la búsqueda por afiliación de ROR y solo la acepta cuando ROR la marca como coincidencia segura.
+- Las afiliaciones que no se resuelven (sin ROR, coincidencia dudosa o registro sin coordenadas) quedan en
+  `docs/pendientes_colaboraciones.json`. Los resultados negativos se recuerdan en `scripts/rorcache.json`;
+  para reintentar uno, borra su entrada en la sección `"texto"`.
+- Solo se mira la afiliación de los **autores**. Las instituciones de España se ocultan por defecto y se activan con el interruptor.
+- Si ROR falla en más del 20 % de las consultas, el script no sobrescribe `colaboraciones.json` y conserva el anterior.
+- Mientras no se haya ejecutado el script, la pestaña muestra un aviso de «todavía no hay datos».

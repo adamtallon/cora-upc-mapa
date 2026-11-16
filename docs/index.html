@@ -18,6 +18,15 @@
   .barra { background: var(--fons); border-bottom: 1px solid var(--vora); padding: 10px 20px; display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; font-size: .9rem; }
   .barra strong { font-size: 1.05rem; }
   .barra label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+  .pestanyes { display: flex; gap: 6px; }
+  .pestanyes button { font: inherit; padding: 5px 12px; border: 1px solid var(--blau); background: #fff; color: var(--blau); border-radius: 999px; cursor: pointer; }
+  .pestanyes button.actiu { background: var(--blau); color: #fff; }
+  .bloc { display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; }
+  .bloc[hidden] { display: none; }
+  .popup { max-height: 260px; overflow-y: auto; }
+  .popup ul { margin: 4px 0 0; padding-left: 18px; font-size: .82rem; }
+  .popup li { margin: 2px 0; }
+  .popup a { color: var(--blau); }
   #avis { display: none; background: #fff4e5; color: #7a4b00; padding: 12px 20px; font-size: .9rem; border-bottom: 1px solid #f0d9b5; }
   #mapa { flex: 1; min-height: 300px; }
   footer { font-size: .78rem; color: var(--gris); padding: 6px 20px; border-top: 1px solid var(--vora); background: #fff; }
@@ -32,8 +41,18 @@
   <span class="sub">Ubicació de les dades publicades a CORA.RDR</span>
 </header>
 <div class="barra">
-  <span><strong id="n-ubic">–</strong> datasets amb ubicació de <span id="n-total">–</span> publicats</span>
-  <label><input type="checkbox" id="chk-intl"> Mostra les ubicacions internacionals (<span id="n-intl">0</span>)</label>
+  <div class="pestanyes" role="group" aria-label="Vista del mapa">
+    <button type="button" id="tab-ubic" class="actiu" aria-pressed="true">Ubicació dels datasets</button>
+    <button type="button" id="tab-colab" aria-pressed="false">Col·laboracions</button>
+  </div>
+  <div class="bloc" id="bloc-ubic">
+    <span><strong id="n-ubic">–</strong> datasets amb ubicació de <span id="n-total">–</span> publicats</span>
+    <label><input type="checkbox" id="chk-intl"> Mostra les ubicacions internacionals (<span id="n-intl">0</span>)</label>
+  </div>
+  <div class="bloc" id="bloc-colab" hidden>
+    <span><strong id="c-inst">–</strong> institucions de <strong id="c-paisos">–</strong> països · <strong id="c-ds">–</strong> datasets amb coautoria externa</span>
+    <label><input type="checkbox" id="chk-es"> Inclou les institucions d'Espanya (<span id="c-es">0</span>)</label>
+  </div>
 </div>
 <div id="avis"></div>
 <div id="mapa"></div>
@@ -119,6 +138,138 @@ function pinta(ambInternacionals) {
 function mostraAvis(msg) {
   const a = document.getElementById("avis"); a.textContent = msg; a.style.display = "block";
 }
+
+function treuAvis() { document.getElementById("avis").style.display = "none"; }
+
+// ---------- Vista de col·laboracions (institucions dels autors, via ROR) ----------
+const COLOR_LINIA = "#1F4E78", COLOR_INST = "#c0562f";
+const capaColab = L.layerGroup();
+let colab = null;            // contingut de colaboraciones.json, un cop carregat
+let vista = "ubic";
+
+let nomsPaisos = null;
+try { nomsPaisos = new Intl.DisplayNames(["ca"], { type: "region" }); } catch (e) { /* navegador antic */ }
+function nomPais(codi, alternatiu) {
+  try { return (nomsPaisos && codi && nomsPaisos.of(codi)) || alternatiu || codi || ""; }
+  catch (e) { return alternatiu || codi || ""; }
+}
+const urlSegura = u => /^https?:\/\//.test(u || "") ? u : "";
+
+// Arc suau d'a a b (corba de Bézier que s'enfila cap al nord)
+function arc(a, b, passos = 36) {
+  const dx = b[1] - a[1], dy = b[0] - a[0];
+  const s = dx >= 0 ? 1 : -1;
+  const cx = (a[1] + b[1]) / 2 - dy * 0.2 * s, cy = (a[0] + b[0]) / 2 + dx * 0.2 * s;
+  const pts = [];
+  for (let i = 0; i <= passos; i++) {
+    const t = i / passos, u = 1 - t;
+    const lat = u * u * a[0] + 2 * u * t * cy + t * t * b[0];
+    const lon = u * u * a[1] + 2 * u * t * cx + t * t * b[1];
+    pts.push([Math.max(-84, Math.min(84, lat)), lon]);
+  }
+  return pts;
+}
+
+function popupColab(n) {
+  const MAX_INST = 6, MAX_DS = 5;
+  const lloc = [n.ciutat, nomPais(n.codi, n.pais)].filter(Boolean).join(", ");
+  const ds = [...n.ds.values()];
+  const llistaInst = n.insts.slice(0, MAX_INST).map(i => {
+    const u = urlSegura(i.ror);
+    const nomI = u ? '<a target="_blank" rel="noopener" href="' + esc(u) + '">' + esc(i.nombre) + "</a>" : esc(i.nombre);
+    return "<li>" + nomI + ' <span style="color:#5b6770">(' + i.n_datasets + ")</span></li>";
+  }).join("") + (n.insts.length > MAX_INST ? "<li>… i " + (n.insts.length - MAX_INST) + " més</li>" : "");
+  const llistaDs = ds.slice(0, MAX_DS).map(d => {
+    const u = urlSegura(d.url);
+    return "<li>" + (u ? '<a target="_blank" rel="noopener" href="' + esc(u) + '">' + esc(d.titulo) + "</a>" : esc(d.titulo)) + "</li>";
+  }).join("") + (ds.length > MAX_DS ? "<li>… i " + (ds.length - MAX_DS) + " més</li>" : "");
+  return '<div class="popup"><h3>' + esc(lloc) + "</h3>" +
+    "<p>" + n.insts.length + (n.insts.length === 1 ? " institució" : " institucions") + " · " +
+    ds.length + (ds.length === 1 ? " dataset" : " datasets") + " amb la UPC</p>" +
+    "<ul>" + llistaInst + "</ul><p><strong>Datasets</strong></p><ul>" + llistaDs + "</ul></div>";
+}
+
+function pintaColab() {
+  capaColab.clearLayers(); mapa.closePopup();
+  if (!colab) return;
+  const origen = [colab.origen.lat, colab.origen.lon];
+  const totes = colab.instituciones || [];
+  document.getElementById("c-es").textContent = totes.filter(i => !i.internacional).length;
+  const ambEspanya = document.getElementById("chk-es").checked;
+  const insts = totes.filter(i => ambEspanya || i.internacional);
+
+  // Les institucions de la mateixa ciutat es dibuixen com un sol node
+  const nodes = new Map();
+  insts.forEach(i => {
+    const k = i.lat.toFixed(2) + "," + i.lon.toFixed(2);
+    let n = nodes.get(k);
+    if (!n) { n = { lat: i.lat, lon: i.lon, ciutat: i.ciudad, pais: i.pais, codi: i.pais_codigo, insts: [], ds: new Map() }; nodes.set(k, n); }
+    n.insts.push(i);
+    i.datasets.forEach(d => n.ds.set(d.doi, d));
+  });
+
+  const dsTots = new Set(), paisos = new Set();
+  insts.forEach(i => { paisos.add(i.pais_codigo); i.datasets.forEach(d => dsTots.add(d.doi)); });
+  document.getElementById("c-inst").textContent = insts.length;
+  document.getElementById("c-paisos").textContent = paisos.size;
+  document.getElementById("c-ds").textContent = dsTots.size;
+
+  [...nodes.values()].sort((a, b) => a.ds.size - b.ds.size).forEach(n => {
+    const gruix = Math.min(8, 1.2 + 1.6 * Math.sqrt(n.ds.size));
+    const radi = Math.min(14, 4 + 2.2 * Math.sqrt(n.ds.size));
+    const marcador = L.circleMarker([n.lat, n.lon], { radius: radi, color: "#fff", weight: 1.5, fillColor: COLOR_INST, fillOpacity: 0.85 })
+      .bindPopup(popupColab(n), { maxWidth: 320 });
+    const lluny = Math.hypot(n.lat - origen[0], n.lon - origen[1]) > 0.1;   // no es dibuixa línia dins de Barcelona
+    if (lluny) {
+      const linia = L.polyline(arc(origen, [n.lat, n.lon]), { color: COLOR_LINIA, weight: gruix, opacity: 0.45, lineCap: "round" }).addTo(capaColab);
+      const ressalta = on => linia.setStyle({ opacity: on ? 0.95 : 0.45, weight: on ? gruix + 2 : gruix });
+      linia.on("mouseover", () => ressalta(true)).on("mouseout", () => ressalta(false)).on("click", () => marcador.openPopup());
+      marcador.on("mouseover", () => ressalta(true)).on("mouseout", () => ressalta(false));
+    }
+    marcador.addTo(capaColab);
+  });
+  L.circleMarker(origen, { radius: 7, color: "#fff", weight: 2, fillColor: COLOR_LINIA, fillOpacity: 1 })
+    .bindTooltip(colab.origen.nombre || "UPC").addTo(capaColab);
+
+  const punts = [origen, ...[...nodes.values()].map(n => [n.lat, n.lon])];
+  if (punts.length > 1) mapa.fitBounds(L.latLngBounds(punts).pad(0.15), { maxZoom: 5 });
+  else mapa.setView(origen, 5);
+}
+
+function carregaColab() {
+  if (colab) return Promise.resolve(colab);
+  return fetch("colaboraciones.json", { cache: "no-cache" })
+    .then(r => { if (!r.ok) { const e = new Error("HTTP " + r.status); e.estat = r.status; throw e; } return r.json(); })
+    .then(j => (colab = j));
+}
+
+function canviaVista(v) {
+  vista = v;
+  const esColab = v === "colab";
+  [["tab-ubic", !esColab], ["tab-colab", esColab]].forEach(([id, actiu]) => {
+    const b = document.getElementById(id);
+    b.classList.toggle("actiu", actiu); b.setAttribute("aria-pressed", String(actiu));
+  });
+  document.getElementById("bloc-ubic").hidden = esColab;
+  document.getElementById("bloc-colab").hidden = !esColab;
+  treuAvis(); mapa.closePopup(); treuArea();
+  if (esColab) {
+    mapa.removeLayer(grup); capaColab.addTo(mapa);
+    carregaColab().then(() => { if (vista === "colab") pintaColab(); })
+      .catch(err => {
+        if (vista !== "colab") return;
+        mostraAvis(err.estat === 404
+          ? "Encara no hi ha dades de col·laboracions (colaboraciones.json). Es generen en la propera execució automàtica o llançant «Actualitzar mapa» a mà des de la pestanya Actions."
+          : "No s'han pogut carregar les col·laboracions (" + err.message + ").");
+      });
+  } else {
+    mapa.removeLayer(capaColab); mapa.addLayer(grup);
+    pinta(document.getElementById("chk-intl").checked);
+  }
+}
+document.getElementById("tab-ubic").addEventListener("click", () => canviaVista("ubic"));
+document.getElementById("tab-colab").addEventListener("click", () => canviaVista("colab"));
+document.getElementById("chk-es").addEventListener("change", pintaColab);
 
 fetch("datos_mapa.json", { cache: "no-cache" })
   .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })

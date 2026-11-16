@@ -1,14 +1,14 @@
 """
-Genera docs/datos_mapa.json con las ubicaciones de los datasets publicados
-de una colección de CORA.RDR (Dataverse, CSUC).
+Genera docs/datos_mapa.json amb les ubicacions dels datasets publicats
+d'una col·lecció de CORA.RDR (Dataverse, CSUC).
 
-- Solo hace peticiones de lectura (GET) y NO necesita token: ve únicamente
-  los datasets publicados, que es lo que debe aparecer en un mapa público.
-- Ubicaciones: coordenadas (bounding box), coordenadas escritas en texto libre
-  y ciudades (tabla propia + geocodificación de respaldo con Nominatim).
-- Lo que no se puede situar queda en docs/pendientes.json para revisarlo.
+- Només fa peticions de lectura (GET) i NO necessita token: només veu els
+  datasets publicats, que és el que ha d'aparèixer en un mapa públic.
+- Ubicacions: coordenades (bounding box), coordenades escrites en text lliure
+  i ciutats (taula pròpia + geocodificació de reserva amb Nominatim).
+- El que no es pot situar queda a docs/pendientes.json per revisar-ho.
 
-Uso:  python scripts/generar_json.py
+Ús:  python scripts/generar_json.py
 """
 import datetime
 import json
@@ -19,11 +19,11 @@ from pathlib import Path
 
 import requests
 
-# ---------- CONFIGURACIÓN ----------
+# ---------- CONFIGURACIÓ ----------
 BASE_URL = "https://dataverse.csuc.cat"
 COLECCION = "upc"
-PAUSA = 0.2                      # segundos entre peticiones a CORA
-USAR_NOMINATIM = True            # geocodificar ciudades que no estén en la tabla
+PAUSA = 0.2                      # segons entre peticions a CORA
+USAR_NOMINATIM = True            # geocodificar ciutats que no siguin a la taula
 # ------------------------------------
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -34,16 +34,16 @@ UA = "cora-upc-mapa/1.0 (biblioteca UPC; datos abiertos)"
 
 
 def norm(s):
-    """Minúsculas, sin acentos y con espacios normalizados."""
+    """Minúscules, sense accents i amb espais normalitzats."""
     s = unicodedata.normalize("NFKD", str(s or ""))
     s = "".join(c for c in s if not unicodedata.combining(c))
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
-# Tabla de ciudades: nombre normalizado -> (latitud, longitud, país)
+# Taula de ciutats: nom normalitzat -> (latitud, longitud, país)
 CIUDADES = {
     "barcelona": (41.3874, 2.1686, "Spain"),
-    "barcelonaa": (41.3874, 2.1686, "Spain"),          # errata frecuente
+    "barcelonaa": (41.3874, 2.1686, "Spain"),          # errada freqüent
     "terrassa": (41.5633, 2.0083, "Spain"),
     "castelldefels": (41.2800, 1.9753, "Spain"),
     "lleida": (41.6176, 0.6200, "Spain"),
@@ -68,7 +68,7 @@ CIUDADES = {
     "san juan del rio": (20.3883, -99.9958, "Mexico"),
 }
 
-# Tabla de ciudades ya geocodificadas por Nominatim en ejecuciones anteriores
+# Memòria de ciutats ja geocodificades per Nominatim en execucions anteriors
 def cargar_cache():
     if CACHE.exists():
         try:
@@ -93,7 +93,7 @@ def valor(d, clave):
 
 
 def geocodificar(ciudad, pais, cache):
-    """Devuelve (lat, lon, país) o None si no se puede situar."""
+    """Retorna (lat, lon, país) o None si no es pot situar."""
     k = norm(ciudad)
     if k in CIUDADES:
         return CIUDADES[k]
@@ -110,14 +110,14 @@ def geocodificar(ciudad, pais, cache):
                          headers={"User-Agent": UA}, timeout=30)
         r.raise_for_status()
         res = r.json()
-        time.sleep(1.1)                       # política de uso: máx. 1 petición/s
+        time.sleep(1.1)                       # política d'ús: màx. 1 petició/s
         if res:
             pais_res = res[0].get("address", {}).get("country", pais or "")
             out = (float(res[0]["lat"]), float(res[0]["lon"]), pais_res)
             cache[ck] = list(out)
             return out
     except Exception as e:
-        print(f"  Nominatim falló para '{ciudad}': {e}")
+        print(f"  Nominatim ha fallat per a '{ciudad}': {e}")
     return None
 
 
@@ -129,7 +129,7 @@ def a_float(x):
 
 
 def extraer_ubicaciones(version, cache, pendientes):
-    """Devuelve la lista de ubicaciones de un dataset (versión más reciente)."""
+    """Retorna la llista d'ubicacions d'un dataset (versió més recent)."""
     campos = version.get("metadataBlocks", {}).get("geospatial", {}).get("fields", [])
     cajas, puntos_texto, ciudades = [], [], []
 
@@ -160,7 +160,7 @@ def extraer_ubicaciones(version, cache, pendientes):
     def cerca(lat, lon):
         return any(abs(u["lat"] - lat) < 0.15 and abs(u["lon"] - lon) < 0.15 for u in ubic)
 
-    # 1) Coordenadas (lo más preciso)
+    # 1) Coordenades (el més precís)
     for w, e, n, s in cajas:
         lat, lon = (n + s) / 2, (w + e) / 2
         es_punto = abs(w - e) < 1e-5 and abs(n - s) < 1e-5
@@ -170,12 +170,12 @@ def extraer_ubicaciones(version, cache, pendientes):
                      "tipo": "punto" if es_punto else "area",
                      "bbox": None if es_punto else [round(s, 6), round(w, 6), round(n, 6), round(e, 6)],
                      "lugar": "", "pais": ""})
-    # 2) Coordenadas escritas como texto
+    # 2) Coordenades escrites com a text
     for lat, lon, pais in puntos_texto:
         if not cerca(lat, lon):
             ubic.append({"lat": lat, "lon": lon, "tipo": "punto", "bbox": None,
                          "lugar": "", "pais": pais})
-    # 3) Ciudades (solo si no hay ya algo a menos de ~15 km)
+    # 3) Ciutats (només si no hi ha ja res a menys de ~15 km)
     for ciudad, pais in ciudades:
         res = geocodificar(ciudad, pais, cache)
         if not res:
@@ -190,7 +190,7 @@ def extraer_ubicaciones(version, cache, pendientes):
 
 
 def clasificar_internacional(u):
-    """True si la ubicación está fuera de España."""
+    """True si la ubicació és fora d'Espanya."""
     if u["pais"]:
         return not es_espana(u["pais"])
     lat, lon = u["lat"], u["lon"]
@@ -218,7 +218,7 @@ def listar_datasets():
 
 def main():
     items = listar_datasets()
-    print(f"{len(items)} datasets publicados en '{COLECCION}'")
+    print(f"{len(items)} datasets publicats a '{COLECCION}'")
     cache, pendientes = cargar_cache(), set()
     ubicaciones, con_ubic, no_leidos = [], set(), 0
 
@@ -230,7 +230,7 @@ def main():
             r.raise_for_status()
             version = r.json()["data"]["latestVersion"]
         except Exception:
-            no_leidos += 1          # p. ej. registros recolectados de otro repositorio
+            no_leidos += 1          # p. ex. registres recol·lectats d'un altre repositori
             continue
         if version.get("versionState") != "RELEASED":
             continue
@@ -260,8 +260,8 @@ def main():
     SALIDA.write_text(json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8")
     PENDIENTES.write_text(json.dumps(sorted(f"{c} ({p})" if p else c for c, p in pendientes),
                                      ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Listo: {len(con_ubic)} datasets con ubicación, {len(ubicaciones)} puntos, "
-          f"{len(pendientes)} ciudades pendientes, {no_leidos} no leídos.")
+    print(f"Fet: {len(con_ubic)} datasets amb ubicació, {len(ubicaciones)} punts, "
+          f"{len(pendientes)} ciutats pendents, {no_leidos} no llegits.")
 
 
 if __name__ == "__main__":

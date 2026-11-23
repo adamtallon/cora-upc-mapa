@@ -1,7 +1,7 @@
 {
- "generado": "2026-11-16",
+ "generado": "2026-11-23",
  "coleccion": "upc",
- "total_publicados": 234,
+ "total_publicados": 238,
  "no_leidos": 40,
  "con_ubicacion": 83,
  "ubicaciones": [
@@ -1155,32 +1155,6 @@
    "internacional": true
   },
   {
-   "lat": 41.382305,
-   "lon": 2.1821,
-   "tipo": "punto",
-   "bbox": null,
-   "lugar": "",
-   "pais": "",
-   "doi": "doi:10.34810/DATA3419",
-   "titulo": "AIS NMEA raw messages from the Barcelona School of Nautical Studies (FNB-UPC)",
-   "url": "https://doi.org/10.34810/DATA3419",
-   "anio": "2026",
-   "internacional": false
-  },
-  {
-   "lat": 41.3874,
-   "lon": 2.1686,
-   "tipo": "ciudad",
-   "bbox": null,
-   "lugar": "Barcelona",
-   "pais": "Spain",
-   "doi": "doi:10.34810/DATA2026",
-   "titulo": "AIS maritime traffic data from the Barcelona School of Nautical Studies (FNB-UPC)",
-   "url": "https://doi.org/10.34810/DATA2026",
-   "anio": "2025",
-   "internacional": false
-  },
-  {
    "lat": 41.3874,
    "lon": 2.1686,
    "tipo": "ciudad",
@@ -1364,6 +1338,24 @@
    "internacional": false
   },
   {
+   "lat": 60.184933,
+   "lon": 24.825311,
+   "tipo": "area",
+   "bbox": [
+    60.177425,
+    24.81079,
+    60.192441,
+    24.839833
+   ],
+   "lugar": "",
+   "pais": "",
+   "doi": "doi:10.34810/DATA3906",
+   "titulo": "Replication data for Effect of the colour on the solar energy harvesting capacity of woven sunshade fabrics as solar cell covers",
+   "url": "https://doi.org/10.34810/DATA3906",
+   "anio": "2026",
+   "internacional": true
+  },
+  {
    "lat": 41.562744,
    "lon": 2.023417,
    "tipo": "area",
@@ -1376,7 +1368,7 @@
    "lugar": "",
    "pais": "",
    "doi": "doi:10.34810/DATA2898",
-   "titulo": "Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
+   "titulo": "Replication data for Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
    "url": "https://doi.org/10.34810/DATA2898",
    "anio": "2026",
    "internacional": false
@@ -1394,7 +1386,7 @@
    "lugar": "",
    "pais": "",
    "doi": "doi:10.34810/DATA2898",
-   "titulo": "Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
+   "titulo": "Replication data for Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
    "url": "https://doi.org/10.34810/DATA2898",
    "anio": "2026",
    "internacional": false
@@ -1412,28 +1404,36 @@
    "lugar": "",
    "pais": "",
    "doi": "doi:10.34810/DATA2898",
-   "titulo": "Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
+   "titulo": "Replication data for Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
    "url": "https://doi.org/10.34810/DATA2898",
    "anio": "2026",
    "internacional": true
   },
   {
-   "lat": 60.184933,
-   "lon": 24.825311,
-   "tipo": "area",
-   "bbox": [
-    60.177425,
-    24.81079,
-    60.192441,
-    24.839833
-   ],
+   "lat": 41.3874,
+   "lon": 2.1686,
+   "tipo": "ciudad",
+   "bbox": null,
+   "lugar": "Barcelona",
+   "pais": "Spain",
+   "doi": "doi:10.34810/DATA2026",
+   "titulo": "AIS maritime traffic data from the Barcelona School of Nautical Studies (FNB-UPC)",
+   "url": "https://doi.org/10.34810/DATA2026",
+   "anio": "2025",
+   "internacional": false
+  },
+  {
+   "lat": 41.382305,
+   "lon": 2.1821,
+   "tipo": "punto",
+   "bbox": null,
    "lugar": "",
    "pais": "",
-   "doi": "doi:10.34810/DATA3906",
-   "titulo": "Replication data for Effect of the colour on the solar energy harvesting capacity of woven sunshade fabrics as solar cell covers",
-   "url": "https://doi.org/10.34810/DATA3906",
+   "doi": "doi:10.34810/DATA3419",
+   "titulo": "AIS NMEA raw messages from the Barcelona School of Nautical Studies (FNB-UPC)",
+   "url": "https://doi.org/10.34810/DATA3419",
    "anio": "2026",
-   "internacional": true
+   "internacional": false
   }
  ]
 }

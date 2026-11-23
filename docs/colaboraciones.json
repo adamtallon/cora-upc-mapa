@@ -1,12 +1,12 @@
 {
- "generado": "2026-11-16",
+ "generado": "2026-11-23",
  "coleccion": "upc",
  "origen": {
   "nombre": "Universitat Politècnica de Catalunya",
   "lat": 41.38879,
   "lon": 2.15899
  },
- "datasets_con_colaboracion": 58,
+ "datasets_con_colaboracion": 60,
  "instituciones": [
   {
    "ror": "https://ror.org/05sd8tv96",
@@ -47,6 +47,49 @@
      "doi": "doi:10.34810/DATA693",
      "titulo": "Replication Data for: Sign language translation for instructional videos",
      "url": "https://doi.org/10.34810/DATA693",
+     "anio": "2023"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/021018s57",
+   "nombre": "Universitat de Barcelona",
+   "ciudad": "Barcelona",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 41.38879,
+   "lon": 2.15899,
+   "internacional": false,
+   "n_datasets": 5,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA1413",
+     "titulo": "Characterization of ‘CCMb’ calcite from Carrara marble as reference material for microanalysis",
+     "url": "https://doi.org/10.34810/DATA1413",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA2224",
+     "titulo": "Replication data for: Eye tracking and machine learning to assess cognitive impairment in post-COVID-19 patients",
+     "url": "https://doi.org/10.34810/DATA2224",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA2971",
+     "titulo": "Replication data for: Machine learning integration of eye-tracking and cognitive screening for detecting cognitive impairment",
+     "url": "https://doi.org/10.34810/DATA2971",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3918",
+     "titulo": "Replication data for: PETGEM-based 3D CSEM inversion kernel: Methodology and implementation (Part I)",
+     "url": "https://doi.org/10.34810/DATA3918",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA739",
+     "titulo": "Dades publicació en accés obert de les universitats catalanes 2011-2021",
+     "url": "https://doi.org/10.34810/DATA739",
      "anio": "2023"
     }
    ]
@@ -128,43 +171,6 @@
      "titulo": "Assessing consumer support for pesticide reduction in vineyards and olive groves using choice experiment and contingent valuation methods",
      "url": "https://doi.org/10.34810/DATA2108",
      "anio": "2025"
-    }
-   ]
-  },
-  {
-   "ror": "https://ror.org/021018s57",
-   "nombre": "Universitat de Barcelona",
-   "ciudad": "Barcelona",
-   "pais": "Spain",
-   "pais_codigo": "ES",
-   "lat": 41.38879,
-   "lon": 2.15899,
-   "internacional": false,
-   "n_datasets": 4,
-   "datasets": [
-    {
-     "doi": "doi:10.34810/DATA1413",
-     "titulo": "Characterization of ‘CCMb’ calcite from Carrara marble as reference material for microanalysis",
-     "url": "https://doi.org/10.34810/DATA1413",
-     "anio": "2026"
-    },
-    {
-     "doi": "doi:10.34810/DATA2224",
-     "titulo": "Replication data for: Eye tracking and machine learning to assess cognitive impairment in post-COVID-19 patients",
-     "url": "https://doi.org/10.34810/DATA2224",
-     "anio": "2026"
-    },
-    {
-     "doi": "doi:10.34810/DATA2971",
-     "titulo": "Replication data for: Machine learning integration of eye-tracking and cognitive screening for detecting cognitive impairment",
-     "url": "https://doi.org/10.34810/DATA2971",
-     "anio": "2026"
-    },
-    {
-     "doi": "doi:10.34810/DATA739",
-     "titulo": "Dades publicació en accés obert de les universitats catalanes 2011-2021",
-     "url": "https://doi.org/10.34810/DATA739",
-     "anio": "2023"
     }
    ]
   },
@@ -319,6 +325,31 @@
    ]
   },
   {
+   "ror": "https://ror.org/02p0gd045",
+   "nombre": "Universidad Complutense de Madrid",
+   "ciudad": "Madrid",
+   "pais": "Spain",
+   "pais_codigo": "ES",
+   "lat": 40.4165,
+   "lon": -3.70256,
+   "internacional": false,
+   "n_datasets": 2,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA2662",
+     "titulo": "Replication Data for: Optical and simulated visual outcomes of two presbyopia-correcting intraocular lenses tested in clinically relevant decentration and tilt conditions",
+     "url": "https://doi.org/10.34810/DATA2662",
+     "anio": "2026"
+    },
+    {
+     "doi": "doi:10.34810/DATA3918",
+     "titulo": "Replication data for: PETGEM-based 3D CSEM inversion kernel: Methodology and implementation (Part I)",
+     "url": "https://doi.org/10.34810/DATA3918",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
    "ror": "https://ror.org/052g8jq94",
    "nombre": "Universitat Autònoma de Barcelona",
    "ciudad": "Cerdanyola del Vallès",
@@ -422,6 +453,25 @@
      "titulo": "How2Sign: a large-scale multimodal dataset for continuous American Sign Language",
      "url": "https://doi.org/10.34810/DATA33",
      "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/05pejbw21",
+   "nombre": "Chengdu University of Technology",
+   "ciudad": "Chengdu",
+   "pais": "China",
+   "pais_codigo": "CN",
+   "lat": 30.66667,
+   "lon": 104.06667,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3918",
+     "titulo": "Replication data for: PETGEM-based 3D CSEM inversion kernel: Methodology and implementation (Part I)",
+     "url": "https://doi.org/10.34810/DATA3918",
+     "anio": "2026"
     }
    ]
   },
@@ -711,6 +761,25 @@
    ]
   },
   {
+   "ror": "https://ror.org/01q3tbs38",
+   "nombre": "King Abdullah University of Science and Technology",
+   "ciudad": "Jeddah",
+   "pais": "Saudi Arabia",
+   "pais_codigo": "SA",
+   "lat": 21.49012,
+   "lon": 39.18624,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3919",
+     "titulo": "Replication data for: Flexible and scalable high-order 3D CSEM modeling with PETGEM",
+     "url": "https://doi.org/10.34810/DATA3919",
+     "anio": "2026"
+    }
+   ]
+  },
+  {
    "ror": "https://ror.org/01zbnvs85",
    "nombre": "Meta (United States)",
    "ciudad": "Menlo Park",
@@ -745,6 +814,25 @@
      "titulo": "Packet latency measurements in experimental TSN-capable networks",
      "url": "https://doi.org/10.34810/DATA1885",
      "anio": "2024"
+    }
+   ]
+  },
+  {
+   "ror": "https://ror.org/032ksge37",
+   "nombre": "Norwegian Geotechnical Institute",
+   "ciudad": "Oslo",
+   "pais": "Norway",
+   "pais_codigo": "NO",
+   "lat": 59.91273,
+   "lon": 10.74609,
+   "internacional": true,
+   "n_datasets": 1,
+   "datasets": [
+    {
+     "doi": "doi:10.34810/DATA3919",
+     "titulo": "Replication data for: Flexible and scalable high-order 3D CSEM modeling with PETGEM",
+     "url": "https://doi.org/10.34810/DATA3919",
+     "anio": "2026"
     }
    ]
   },
@@ -839,25 +927,6 @@
      "doi": "doi:10.34810/DATA3335",
      "titulo": "Pilot_4-Assessment_of_concrete_at_demolition_site",
      "url": "https://doi.org/10.34810/DATA3335",
-     "anio": "2026"
-    }
-   ]
-  },
-  {
-   "ror": "https://ror.org/02p0gd045",
-   "nombre": "Universidad Complutense de Madrid",
-   "ciudad": "Madrid",
-   "pais": "Spain",
-   "pais_codigo": "ES",
-   "lat": 40.4165,
-   "lon": -3.70256,
-   "internacional": false,
-   "n_datasets": 1,
-   "datasets": [
-    {
-     "doi": "doi:10.34810/DATA2662",
-     "titulo": "Replication Data for: Optical and simulated visual outcomes of two presbyopia-correcting intraocular lenses tested in clinically relevant decentration and tilt conditions",
-     "url": "https://doi.org/10.34810/DATA2662",
      "anio": "2026"
     }
    ]
@@ -1046,7 +1115,7 @@
    "datasets": [
     {
      "doi": "doi:10.34810/DATA2898",
-     "titulo": "Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
+     "titulo": "Replication data for Textile-reinforced conductive cement composites for heating and sensing applications: Effects of the structure of the conductive layer and environmental conditions",
      "url": "https://doi.org/10.34810/DATA2898",
      "anio": "2026"
     }
